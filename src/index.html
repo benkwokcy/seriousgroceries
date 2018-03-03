@@ -10,17 +10,24 @@
   <title>Serious Groceries</title>
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
 
-  <!-- Semantic UI -->
+  <!-- Semantic UI Links -->
     <link rel="stylesheet" type="text/css" href="vendors/semantic/dist/semantic.min.css">
   <script
     src="https://code.jquery.com/jquery-3.1.1.min.js"
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
 
+  <!-- Styles -->
   <style type="text/css">
 
     .hidden.menu {
       display: none;
+    }
+
+    .landing-image {
+      background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('assets/img/bg.jpg') !important;
+      /* background-image: url('assets/img/bg.jpg') !important; */
+      background-size: cover !important;
     }
 
     .masthead.segment {
@@ -165,7 +172,7 @@
 
 <!-- Page Contents -->
 <div class="pusher">
-  <div class="ui inverted vertical masthead center aligned segment">
+  <div class="ui inverted vertical masthead center aligned segment landing-image">
 
     <div class="ui container">
       <div class="ui large secondary inverted pointing menu">
