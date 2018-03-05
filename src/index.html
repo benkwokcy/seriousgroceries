@@ -15,10 +15,12 @@
   <link rel="stylesheet" type="text/css" href="vendors/semantic/dist/semantic.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/index.css">
 
+  <script src="vendors/jquery.min.js"></script>
+
   <!-- Styles -->
   <style type="text/css">
     .landing-image {
-      background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('assets/img/bg.jpeg') !important;
+      background: linear-gradient( rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) ), url('assets/img/bg.jpeg') !important;
       background-size: cover !important;
     }
     .ui.secondary.inverted.pointing.menu {
@@ -29,12 +31,12 @@
     }
   </style>
 
-   <!-- Scripts -->
+<!-- 
   <script
     src="https://code.jquery.com/jquery-3.1.1.min.js"
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous">
-  </script>
+  </script> -->
 
   <script>
   $(document)
@@ -101,8 +103,8 @@
         </a>
         <!-- <a class="active item">Home</a> -->
         <div class="right item">
-          <a href="login.html" class="ui inverted button">Log in</a>
-          <a class="ui inverted button">Sign Up</a>
+          <a href="login.html" class="ui teal button">Log in</a>
+          <a class="ui teal button">Sign Up</a>
         </div>
       </div>
     </div>
@@ -120,16 +122,16 @@
 
   <div class="ui vertical stripe segment">
     <div class="ui top aligned stackable grid container">
-        <div class="eight wide column">
-          <h1>What is this?</h1>
-          <p>Serious Groceries helps you decide what to cook for dinner on a limited budget in Victoria.</p>
-          <h2>How?</h2>
-          <p>It scrapes the sales flyers of nearby grocery stores and matches the data against a personal library of dish recipes that you chose. This way, you can easily see the top dishes that can be shopped for cheaply.</p>
-        </div>
-        <div class="eight wide column">
-            <h2>How is it different from Flipp/Pepperplate/etc?</h2>
-            <p>Unlike flyer aggregation apps like Flipp, this app recommends specific dishes to cook. Unlike grocery organization apps and recipe recommendation apps like Pepperplate, CookSmarts, Plan to Eat, and Paprika, this app takes into account the items that are currently on sale nearby.</p>
-          </div>
+      <div class="eight wide column">
+        <h1>What is this?</h1>
+        <p>Serious Groceries helps you decide what to cook for dinner on a limited budget in Victoria.</p>
+        <h2>How?</h2>
+        <p>It scrapes the sales flyers of nearby grocery stores and matches the data against a personal library of dish recipes that you chose. This way, you can easily see the top dishes that can be shopped for cheaply.</p>
+      </div>
+      <div class="eight wide column">
+          <h2>How is it different from Flipp/Pepperplate/etc?</h2>
+          <p>Unlike flyer aggregation apps like Flipp, this app recommends specific dishes to cook. Unlike grocery organization apps and recipe recommendation apps like Pepperplate, CookSmarts, Plan to Eat, and Paprika, this app takes into account the items that are currently on sale nearby.</p>
+      </div>
     </div>
   </div>
 
