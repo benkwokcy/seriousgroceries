@@ -11,6 +11,8 @@
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="stylesheet" type="text/css" href="vendors/semantic/dist/semantic.min.css">
 
+  <script src="vendors/jquery.min.js"></script>
+
   <style type="text/css">
   body {
     background-color: #FFFFFF;
@@ -28,13 +30,40 @@
     margin: 5em 0em 0em;
     padding: 5em 0em;
   }
+  /* .ui.card {
+    max-width: 50px;
+  } */
   </style>
+
+  <!-- <script>
+    $(document)
+      .ready(function() {
+  
+        // create sidebar and attach to menu open
+        $('.ui.sidebar')
+          .sidebar('attach events', '.toc.item')
+        ;
+  
+      })
+    ;
+  </script> -->
 
 </head>
 <body>
-    
+
+  <!-- Sidebar Menu -->
+  <!-- <div class="ui vertical inverted sidebar menu">
+    <a class="active item" href="index.html">Home</a>
+    <a class="item" href="login.html">Login</a>
+    <a class="item" href="sign.html">Signup</a>
+  </div> -->
+
+  <!-- Page Contents -->
   <div class="ui fixed menu">
     <div class="ui container">
+      <!-- <a class="toc item">
+        <i class="sidebar icon"></i>
+      </a> -->
       <a href="today.html" class="header item">
         <img class="logo" src="assets/img/logo128.png">
         Serious Groceries
@@ -53,7 +82,7 @@
 
   <div class="ui main container">
     <h2 class="ui dividing header">Today's Options</h2>
-    <div class="ui four cards" >
+    <div class="ui stackable four cards" >
         <div class="ui card">
             <div class="image">
                 <img src="assets/img/dish/bucatini.jpg">
@@ -115,7 +144,9 @@
             </div>
         </div>
     </div>
-    <div class="ui header">Show more</div>
+    <div class="ui small header">
+        <a href="#">Show more</a>
+    </div>
   </div>
 
   <div class="ui vertical footer segment">
@@ -126,6 +157,9 @@
         </p>
     </div>
   </div>
+
+  <!-- Load JavaScript at End of Body for Faster Loading -->
+  <script src="vendors/semantic/dist/semantic.min.js"></script>
 </body>
 
 </html>
