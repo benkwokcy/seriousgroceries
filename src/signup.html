@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <!-- Site Properties -->
-  <title>Log In</title>
+  <title>Sign Up</title>
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="stylesheet" type="text/css" href="vendors/semantic/dist/semantic.min.css">
   <!-- <link rel="stylesheet" type="text/css" href="assets/css/index.css"> -->
@@ -39,13 +39,18 @@
       $('.ui.form')
         .form({
           fields: {
-            email: {
-              identifier  : 'email',
+            username: {
+              identifier  : 'username',
               rules: [
                 {
                   type   : 'empty',
-                  prompt : 'Please enter your e-mail'
-                },
+                  prompt : 'Please enter your username'
+                }
+              ]
+            },
+            email: {
+              identifier  : 'email',
+              rules: [
                 {
                   type   : 'email',
                   prompt : 'Please enter a valid e-mail'
@@ -55,10 +60,6 @@
             password: {
               identifier  : 'password',
               rules: [
-                {
-                  type   : 'empty',
-                  prompt : 'Please enter your password'
-                },
                 {
                   type   : 'length[6]',
                   prompt : 'Your password must be at least 6 characters'
@@ -76,13 +77,13 @@
 
 <div class="ui middle aligned center aligned grid">
   <div class="column">
-      <h2 class="ui teal image header">
-      <a href="index.html">
-          <img src="assets/img/logo128.png" class="ui tiny image">
-      </a>
-      <br>
+    <h2 class="ui teal image header">
+        <a href="index.html">
+            <img src="assets/img/logo128.png" class="ui tiny image">
+        </a>
+        <br>
       <div class="content">
-        Log In
+        Sign Up
       </div>
     </h2>
     <form class="ui large form">
@@ -90,22 +91,30 @@
         <div class="field">
           <div class="ui left icon input">
             <i class="user icon"></i>
-            <input type="text" name="email" placeholder="E-mail address">
+            <input type="text" name="username" placeholder="Pick a username">
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="user icon"></i>
+            <input type="text" name="email" placeholder="you@example.com">
           </div>
         </div>
         <div class="field">
           <div class="ui left icon input">
             <i class="lock icon"></i>
-            <input type="password" name="password" placeholder="Password">
+            <input type="password" name="password" placeholder="Create a password">
           </div>
         </div>
-        <div class="ui fluid large teal submit button">Log In</div>
+        <div class="ui fluid large teal submit button">Sign up for Serious Groceries</div>
       </div>
+
       <div class="ui error message"></div>
+
     </form>
 
     <div class="ui message">
-      Don't have an account? <a href="#">Sign Up</a>
+      By clicking "Sign up for Serious Groceries", you agree to our <a href="privacy.html" target="_blank">privacy policy</a>. We will never send you unsolicited emails.
     </div>
   </div>
 </div>

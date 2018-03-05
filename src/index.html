@@ -15,14 +15,11 @@
   <link rel="stylesheet" type="text/css" href="assets/css/index.css">
 
   <script src="vendors/jquery.min.js"></script>
-  <!-- <script src="vendors/semantic/dist/components/visibility.js"></script>
-  <script src="vendors/semantic/dist/components/sidebar.js"></script>
-  <script src="vendors/semantic/dist/components/transition.js"></script> -->
 
   <!-- Styles -->
   <style type="text/css">
     .landing-image {
-      background: linear-gradient( rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) ), url('assets/img/bg.jpeg') !important;
+      background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3) ), url('assets/img/bg.jpeg') !important;
       background-size: cover !important;
     }
     .ui.secondary.inverted.pointing.menu {
@@ -48,28 +45,12 @@
 </head>
 <body>
 
-<!-- Following Menu -->
-<!-- <div class="ui large top fixed hidden menu">
-  <div class="ui container">
-    <a class="active item">Home</a>
-    <div class="right menu">
-      <div class="item">
-        <a class="ui button">Log in</a>
-      </div>
-      <div class="item">
-        <a class="ui primary button">Sign Up</a>
-      </div>
-    </div>
-  </div>
-</div> -->
-
 <!-- Sidebar Menu -->
 <div class="ui vertical inverted sidebar menu">
-  <a class="active item">Home</a>
-  <a class="item">Login</a>
-  <a class="item">Signup</a>
+  <a class="active item" href="index.html">Home</a>
+  <a class="item" href="login.html">Login</a>
+  <a class="item" href="sign.html">Signup</a>
 </div>
-
 
 <!-- Page Contents -->
 <div class="pusher">
@@ -85,8 +66,8 @@
         </a>
         <!-- <a class="active item">Home</a> -->
         <div class="right item">
-          <a href="login.html" class="ui teal button">Log in</a>
-          <a class="ui teal button">Sign Up</a>
+          <a class="ui inverted button" href="login.html">Log in</a>
+          <a class="ui inverted button" href="signup.html">Sign Up</a>
         </div>
       </div>
     </div>
@@ -107,7 +88,7 @@
   <div class="ui vertical stripe segment">
     <div class="ui top aligned stackable grid container">
       <div class="eight wide column">
-        <h1>What is this?</h1>
+        <h2>What is this?</h2>
         <p>Serious Groceries helps you decide what to cook for dinner on a limited budget in Victoria.</p>
         <h2>How?</h2>
         <p>It scrapes the sales flyers of nearby grocery stores and matches the data against a personal library of dish recipes that you chose. This way, you can easily see the top dishes that can be shopped for cheaply.</p>
