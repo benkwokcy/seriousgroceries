@@ -11,11 +11,13 @@
   <!-- Site Properties -->
   <title>Serious Groceries</title>
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
-
   <link rel="stylesheet" type="text/css" href="vendors/semantic/dist/semantic.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/index.css">
 
   <script src="vendors/jquery.min.js"></script>
+  <!-- <script src="vendors/semantic/dist/components/visibility.js"></script>
+  <script src="vendors/semantic/dist/components/sidebar.js"></script>
+  <script src="vendors/semantic/dist/components/transition.js"></script> -->
 
   <!-- Styles -->
   <style type="text/css">
@@ -31,29 +33,9 @@
     }
   </style>
 
-<!-- 
-  <script
-    src="https://code.jquery.com/jquery-3.1.1.min.js"
-    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-    crossorigin="anonymous">
-  </script> -->
-
   <script>
   $(document)
     .ready(function() {
-
-      // fix menu when passed
-      $('.masthead')
-        .visibility({
-          once: false,
-          onBottomPassed: function() {
-            $('.fixed.menu').transition('fade in');
-          },
-          onBottomPassedReverse: function() {
-            $('.fixed.menu').transition('fade out');
-          }
-        })
-      ;
 
       // create sidebar and attach to menu open
       $('.ui.sidebar')
@@ -67,7 +49,7 @@
 <body>
 
 <!-- Following Menu -->
-<div class="ui large top fixed hidden menu">
+<!-- <div class="ui large top fixed hidden menu">
   <div class="ui container">
     <a class="active item">Home</a>
     <div class="right menu">
@@ -79,7 +61,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- Sidebar Menu -->
 <div class="ui vertical inverted sidebar menu">
@@ -115,7 +97,9 @@
       </h1>
       <h2>Cooking your favorite dishes just got cheaper</h2>
       <br>
-      <div class="ui huge primary button">What's for dinner? <i class="right arrow icon"></i></div>
+      <a href="today.html">
+          <div class="ui huge primary button">What's for dinner? <i class="right arrow icon"></i></div>
+      </a>
     </div>
 
   </div>
