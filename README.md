@@ -1,6 +1,6 @@
 ## Serious Groceries - a flyer scraping website for cooks.
 
-Serious Groceries helps you decide what to cook for dinner on a limited budget in Victoria. 
+Serious Groceries helps you decide what to cook for a meal on a limited budget in Victoria. 
 
 It does this by scraping the sales flyers of nearby grocery stores and matching the data against a personal library of dish recipes chosen by the user. This way, you can easily see the top dishes that can be shopped for cheaply.
 
