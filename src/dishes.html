@@ -68,7 +68,7 @@
         <img class="logo" src="assets/img/logo128.png">
         Serious Groceries
       </a>
-      <a href="#" class="header item">Dishes</a>
+      <a href="dishes.html" class="header item">My Dishes</a>
       <div class="right menu">
         <div class="item">
             <a class="ui button" href="signin.html">Log in</a>
@@ -81,72 +81,49 @@
   </div>
 
   <div class="ui main container">
-    <h2 class="ui dividing header">Today's Options</h2>
-    <div class="ui stackable four cards" >
-        <div class="ui card">
-            <div class="image">
-                <img src="assets/img/dish/bucatini.jpg">
-            </div>
-            <div class="content">
-                <div class="header">Bolognese Sauce</div>
-                <div class="meta">
-                    <a class="group">SG Price Score: 95</a>
-                </div>
-                <div class="description">Keyword Matches: Ground Pork, Sausage, Parsley, Spaghetti</div>
-            </div>
-            <div class="extra content">
-                <a class="friends">Available at: Thrifty Foods</a>
-            </div>
+    <h2 class="ui dividing header">My Dishes</h2>
+
+    <div class="ui form">
+      <div class="fields">
+        <div class="field">
+          <label>Name</label>
+          <input type="text">
         </div>
-        <div class="ui card">
-            <div class="image">
-                <img src="assets/img/dish/peasoup.jpg">
-            </div>
-            <div class="content">
-                <div class="header">Split Pea Soup</div>
-                <div class="meta">
-                    <a class="group">SG Price Score: 90</a>
-                </div>
-                <div class="description">Keyword Matches: Ham, Split Pea, Onion</div>
-            </div>
-            <div class="extra content">
-                <a class="friends">Available at: Fairway Markets</a>
-            </div>
+        <div class="field">
+          <label>Ingredients</label>
+          <input type="text">
         </div>
-        <div class="ui card">
-            <div class="image">
-                <img src="assets/img/dish/beefstew.jpg">
-            </div>
-            <div class="content">
-                <div class="header">Beef Stew</div>
-                <div class="meta">
-                    <a class="group">SG Price Score: 78</a>
-                </div>
-                <div class="description">Keyword Matches: Beef Chuck, Carrot, Celery, Potato</div>
-            </div>
-            <div class="extra content">
-                <a class="friends">Available at: Pepper's Foods</a>
-            </div>
-        </div>
-        <div class="ui card">
-            <div class="image">
-                <img src="assets/img/dish/mapotofu.jpg">
-            </div>
-            <div class="content">
-                <div class="header">Mapo Tofu</div>
-                <div class="meta">
-                    <a class="group">SG Price Score: 66</a>
-                </div>
-                <div class="description">Keyword Matches: Tofu, Chili Sauce, Ginger</div>
-            </div>
-            <div class="extra content">
-                <a class="friends">Available at: Thrifty Foods</a>
-            </div>
-        </div>
+      </div>
+      <div class="ui blue submit button">Add</div>
     </div>
-    <div class="ui small header">
-        <a href="#">&nbsp;Show more</a>
-    </div>
+
+    <table class="ui unstackable celled striped table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Ingredients</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Beef Stew</td>
+            <td>Beef Chuck, Carrot, Celery, Potato</td>
+          </tr>
+          <tr>
+            <td>Bolognese Sauce</td>
+            <td>Ground Pork, Sausage, Parsley, Spaghetti</td>
+          </tr>
+          <tr>
+            <td>Split Pea Soup</td>
+            <td>Ground Pork, Sausage, Parsley, Spaghetti</td>
+          </tr>
+          <tr>
+            <td>Mapo Tofu</td>
+            <td>Tofu, Chili Sauce, Ginger</td>
+          </tr>
+        </tbody>
+      </table>
+
   </div>
 
   <div class="ui vertical footer segment">
