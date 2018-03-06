@@ -97,14 +97,14 @@
     <div class="column">
      
       <div class="ui steps">
-        <div class="active step">
+        <div class="completed step">
           <i class="user icon"></i>
           <div class="content">
             <div class="title">Step 1:</div>
             <div class="description">Create account</div>
           </div>
         </div>
-        <div class="disabled step">
+        <div class="active step">
           <i class="star icon"></i>
           <div class="content">
             <div class="title">Step 2:</div>
@@ -122,45 +122,28 @@
 
       <h2 class="ui teal image header">        
         <div class="content">
-            Create an account
+            What would you like to cook?
         </div>
       </h2>  
 
       <form class="ui large form">
-        <div class="ui stacked segment">
-          <h5 class="ui left aligned header">Username</h5>
-          <div class="field">
-            <div class="ui left icon input">
-              <i class="user icon"></i>
-              <input type="text" name="username" placeholder="Pick a username">
-            </div>
-          </div>
-          <h5 class="ui left aligned header">Email</h5>
-          <div class="field">
-            <div class="ui left icon input">
-              <i class="user icon"></i>
-              <input type="text" name="email" placeholder="you@example.com">
-            </div>
-          </div>
-          <h5 class="ui left aligned header">Password</h5> 
-          <div class="field">
-            <div class="ui left icon input">
-              <i class="lock icon"></i>
-              <input type="password" name="password" placeholder="Create a password">
-            </div>
-          </div>
-          <div class="ui fluid large teal submit button">
-            Sign up for Serious Groceries
-          </div>
+        Select all that apply:
+        
+        <div class="ui fluid vertical menu">
+          <a class="item">Vegetarian</a>
+          <a class="item">Vegan</a>
+          <a class="item">Asian</a>
+          <a class="item">Quick Bites</a>
+          <a class="item">Master Chef</a>
         </div>
 
+        <div class="ui stacked segment">
+          <div class="ui fluid large teal submit button">Continue</div>
+          </div>
         <div class="ui error message"></div>
 
       </form>
 
-      <div class="ui message">
-        By clicking "Sign up for Serious Groceries", you agree to our <a href="privacy.html" target="_blank">privacy policy</a>. We will never send you unsolicited emails.
-      </div>
     </div>
   </div>
 
