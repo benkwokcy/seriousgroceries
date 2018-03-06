@@ -35,18 +35,18 @@
   } */
   </style>
 
-  <!-- <script>
-    $(document)
-      .ready(function() {
+  <script>
+    // $(document)
+    //   .ready(function() {
   
-        // create sidebar and attach to menu open
-        $('.ui.sidebar')
-          .sidebar('attach events', '.toc.item')
-        ;
+    //     // create sidebar and attach to menu open
+    //     $('.ui.sidebar')
+    //       .sidebar('attach events', '.toc.item')
+    //     ;
   
-      })
-    ;
-  </script> -->
+    //   })
+    // ;
+  </script>
 
 </head>
 <body>
@@ -81,7 +81,9 @@
   </div>
 
   <div class="ui main container">
+
     <h2 class="ui dividing header">My Dishes</h2>
+    <h3 class="ui dividing header">New Recipe:</h3>
 
     <div class="ui form">
       <div class="fields">
@@ -90,39 +92,65 @@
           <input type="text">
         </div>
         <div class="field">
-          <label>Ingredients</label>
-          <input type="text">
+            <label>Ingredients</label>
+            <div class="ui action input">
+                <input type="text">
+                <button class="ui button">Add</button>
+            </div>
         </div>
       </div>
-      <div class="ui blue submit button">Add</div>
     </div>
 
+    <h3 class="ui left dividing header">Recipe Bank:</h3>
+    <div class="ui right aligned category search">
+      <div class="ui icon input">
+        <input class="prompt" placeholder="Search recipes" type="text">
+        <i class="search icon"></i>
+      </div>
+    </div>
+    
     <table class="ui unstackable celled striped table">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Ingredients</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Beef Stew</td>
-            <td>Beef Chuck, Carrot, Celery, Potato</td>
-          </tr>
-          <tr>
-            <td>Bolognese Sauce</td>
-            <td>Ground Pork, Sausage, Parsley, Spaghetti</td>
-          </tr>
-          <tr>
-            <td>Split Pea Soup</td>
-            <td>Ground Pork, Sausage, Parsley, Spaghetti</td>
-          </tr>
-          <tr>
-            <td>Mapo Tofu</td>
-            <td>Tofu, Chili Sauce, Ginger</td>
-          </tr>
-        </tbody>
-      </table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Ingredients</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Beef Stew</td>
+          <td>Beef Chuck, Carrot, Celery, Potato</td>
+        </tr>
+        <tr>
+          <td>Bolognese Sauce</td>
+          <td>Ground Pork, Sausage, Parsley, Spaghetti</td>
+        </tr>
+        <tr>
+          <td>Split Pea Soup</td>
+          <td>Ham, Split Pea, Onion</td>
+        </tr>
+        <tr>
+          <td>Mapo Tofu</td>
+          <td>Tofu, Chili Sauce, Ginger</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr><th colspan="3">
+          <div class="ui right floated pagination menu">
+            <a class="icon item">
+              <i class="left chevron icon"></i>
+            </a>
+            <a class="item">1</a>
+            <a class="item">2</a>
+            <a class="item">3</a>
+            <a class="item">4</a>
+            <a class="icon item">
+              <i class="right chevron icon"></i>
+            </a>
+          </div>
+        </th>
+      </tr></tfoot>
+    </table>
 
   </div>
 
