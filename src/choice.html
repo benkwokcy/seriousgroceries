@@ -15,6 +15,7 @@
   <!-- <link rel="stylesheet" type="text/css" href="assets/css/index.css"> -->
 
   <script src="vendors/jquery.min.js"></script>
+  <script src="assets/js/choice.js"></script>
   <!-- <script src="vendors/semantic/dist/components/form.js"></script>
   <script src="vendors/semantic/dist/components/transition.js"></script> -->
 
@@ -33,45 +34,6 @@
     }
   </style>
   
-  <script>
-  $(document)
-    .ready(function() {
-      $('.ui.form')
-        .form({
-          fields: {
-            username: {
-              identifier  : 'username',
-              rules: [
-                {
-                  type   : 'empty',
-                  prompt : 'Please enter your username'
-                }
-              ]
-            },
-            email: {
-              identifier  : 'email',
-              rules: [
-                {
-                  type   : 'email',
-                  prompt : 'Please enter a valid e-mail'
-                }
-              ]
-            },
-            password: {
-              identifier  : 'password',
-              rules: [
-                {
-                  type   : 'length[6]',
-                  prompt : 'Your password must be at least 6 characters'
-                }
-              ]
-            }
-          }
-        })
-      ;
-    })
-  ;
-  </script>
 </head>
 <body>
 
