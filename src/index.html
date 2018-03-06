@@ -15,6 +15,7 @@
   <link rel="stylesheet" type="text/css" href="assets/css/index.css">
 
   <script src="vendors/jquery.min.js"></script>
+  <script src="assets/js/index.js"></script>
 
   <!-- Styles -->
   <style type="text/css">
@@ -30,18 +31,6 @@
     }
   </style>
 
-  <script>
-  $(document)
-    .ready(function() {
-
-      // create sidebar and attach to menu open
-      $('.ui.sidebar')
-        .sidebar('attach events', '.toc.item')
-      ;
-
-    })
-  ;
-  </script>
 </head>
 <body>
 
@@ -51,6 +40,7 @@
   <a class="item" href="signin.html">Sign In</a>
   <a class="item" href="sign.html">Sign Up</a>
 </div>
+
 
 <!-- Page Contents -->
 <div class="pusher">
@@ -98,6 +88,26 @@
       </div>
     </div>
   </div>
+
+  <!-- Modal -->
+  <!-- <div class="ui modal">
+    <i class="close icon"></i>
+    <div class="header">
+      Modal Title
+    </div>
+    <div class="image content">
+      <div class="image">
+        An image can appear on left or an icon
+      </div>
+      <div class="description">
+        A description can appear on the right
+      </div>
+    </div>
+    <div class="actions">
+      <div class="ui button">Cancel</div>
+      <div class="ui button">OK</div>
+    </div>
+  </div> -->
 
   <!-- Load JavaScript at End of Body for Faster Loading -->
   <script src="vendors/semantic/dist/semantic.min.js"></script>
