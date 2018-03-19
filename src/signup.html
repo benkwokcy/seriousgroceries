@@ -31,6 +31,46 @@
       max-width: 650px;
     }
   </style>
+
+  <!-- <script>
+    $(document)
+      .ready(function() {
+          $('.ui.form')
+          .form({
+              fields: {
+              username: {
+                  identifier  : 'username',
+                  rules: [
+                  {
+                      type   : 'empty',
+                      prompt : 'Please enter your username'
+                  }
+                  ]
+              },
+              email: {
+                  identifier  : 'email',
+                  rules: [
+                  {
+                      type   : 'email',
+                      prompt : 'Please enter a valid e-mail'
+                  }
+                  ]
+              },
+              password: {
+                  identifier  : 'password',
+                  rules: [
+                  {
+                      type   : 'length[6]',
+                      prompt : 'Your password must be at least 6 characters'
+                  }
+                  ]
+              }
+              }
+          })
+          ;
+      })
+    ;
+  </script> -->
   
 </head>
 <body>
@@ -92,7 +132,7 @@
           <div class="field">
             <div class="ui left icon input">
               <i class="user icon"></i>
-              <input type="text" name="username" placeholder="Pick a username">
+              <input id="user" type="text" name="username" placeholder="Pick a username">
             </div>
           </div>
           <h5 class="ui left aligned header">Email</h5>
@@ -109,7 +149,7 @@
               <input type="password" name="password" placeholder="Create a password">
             </div>
           </div>
-          <div class="ui fluid large teal submit button">
+          <div class="ui fluid large teal submit button" onclick="emptyUser()">
             Sign up for Serious Groceries
           </div>
         </div>
