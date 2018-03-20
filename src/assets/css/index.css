@@ -79,8 +79,8 @@
 
 /* My Changes */
 .landing-image {
-    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3) ), url('assets/img/bg.jpg') !important;
-    background-size: cover !important;
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3) ), url('../img/bg.jpg');
+    background-size: cover;
 } 
 .ui.secondary.inverted.pointing.menu {
     border-color: rgba(34, 36, 38, 0.0);
