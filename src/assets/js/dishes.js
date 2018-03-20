@@ -1,3 +1,4 @@
+'use strict';
 
 $(function(){
   $.getJSON("assets/table.json", function(data) {
