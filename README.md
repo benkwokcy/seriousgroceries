@@ -14,6 +14,6 @@ Unlike flyer aggregation apps like Flipp, this app recommends specific dishes to
 
 This source code is licensed under the MIT license.
 
----
+### Authors
 
 Made by Benjamin Kwok and Jonathan Zhang.
