@@ -1,4 +1,8 @@
-## Serious Groceries - a flyer scraping website for cooks.
+## Serious Groceries - a flyer scraping website for home cooks.
+
+This repository contains the files for generating the [SeriousGroceries website](https://seriousgroceries.firebaseapp.com/).
+
+### About
 
 Serious Groceries helps you decide what to cook for a meal on a limited budget in Victoria. 
 
