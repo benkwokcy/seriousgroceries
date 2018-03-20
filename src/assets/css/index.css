@@ -1,5 +1,4 @@
 /* From Semantic UI Example */
-
 .hidden.menu {
     display: none;
 }
@@ -76,4 +75,16 @@
 .masthead h2 {
     margin-top: 0.5em;
     font-size: 1.5em;
+}
+
+/* My Changes */
+.landing-image {
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3) ), url('assets/img/bg.jpg') !important;
+    background-size: cover !important;
+} 
+.ui.secondary.inverted.pointing.menu {
+    border-color: rgba(34, 36, 38, 0.0);
+}
+.ui.secondary.inverted.pointing.menu .active.item {
+    border-color: rgba(34, 36, 38, 0.0);
 }
