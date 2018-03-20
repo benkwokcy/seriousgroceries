@@ -12,66 +12,21 @@
   <title>Sign Up</title>
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="stylesheet" type="text/css" href="vendors/semantic/dist/semantic.min.css">
-  <!-- <link rel="stylesheet" type="text/css" href="assets/css/index.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/signup.css"> -->
 
   <script src="vendors/jquery.min.js"></script>
   <script src="assets/js/signup.js"></script>
 
-  <style type="text/css">
-    body {
-      background-color: rgb(235, 235, 235);
-    }
-    body > .grid {
-      height: 100%;
-    }
-    .image {
-      margin-top: -100px;
-    }
-    .column {
-      max-width: 650px;
-    }
-  </style>
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/4.11.0/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/4.11.0/firebase-auth.js"></script>
+  <script defer src="/__/firebase/4.11.0/firebase-database.js"></script>
+  <script defer src="/__/firebase/4.11.0/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/4.11.0/firebase-storage.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
 
-  <!-- <script>
-    $(document)
-      .ready(function() {
-          $('.ui.form')
-          .form({
-              fields: {
-              username: {
-                  identifier  : 'username',
-                  rules: [
-                  {
-                      type   : 'empty',
-                      prompt : 'Please enter your username'
-                  }
-                  ]
-              },
-              email: {
-                  identifier  : 'email',
-                  rules: [
-                  {
-                      type   : 'email',
-                      prompt : 'Please enter a valid e-mail'
-                  }
-                  ]
-              },
-              password: {
-                  identifier  : 'password',
-                  rules: [
-                  {
-                      type   : 'length[6]',
-                      prompt : 'Your password must be at least 6 characters'
-                  }
-                  ]
-              }
-              }
-          })
-          ;
-      })
-    ;
-  </script> -->
-  
 </head>
 <body>
 
