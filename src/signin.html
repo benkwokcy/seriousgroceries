@@ -10,19 +10,22 @@
   <link rel="stylesheet" type="text/css" href="vendors/semantic/dist/semantic.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/signin.css">
 
-  <script defer src="vendors/jquery.min.js"></script>
-  <script defer src="vendors/semantic/dist/semantic.min.js"></script>
-  <script defer src="assets/js/signin.js"></script>
+  <script src="vendors/jquery.min.js"></script>
+  <script src="vendors/semantic/dist/semantic.min.js"></script>
+  <script src="assets/js/signin.js"></script>
 
-  <!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
-  <script src="/__/firebase/4.11.0/firebase-app.js"></script>
-  <!-- features -->
-  <script src="/__/firebase/4.11.0/firebase-auth.js"></script>
-  <!-- <script src="/__/firebase/4.11.0/firebase-database.js"></script>
-  <script src="/__/firebase/4.11.0/firebase-messaging.js"></script>
-  <script src="/__/firebase/4.11.0/firebase-storage.js"></script> -->
-  <!-- init -->
-  <script src="/__/firebase/init.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+  <script>
+    var config = {
+      apiKey: "AIzaSyA9NSEgu1dEjIsFcI1UAWppnxJZOGuQFSE",
+      authDomain: "seriousgroceries.firebaseapp.com",
+      databaseURL: "https://seriousgroceries.firebaseio.com",
+      projectId: "seriousgroceries",
+      storageBucket: "seriousgroceries.appspot.com",
+      messagingSenderId: "743447851329"
+    };
+    firebase.initializeApp(config);
+  </script>
   
 </head>
 <body>
@@ -55,7 +58,7 @@
             <input type="password" name="password" placeholder="Password">
           </div>
         </div>
-        <div class="ui fluid large teal submit button">Sign In</div>
+        <div class="ui fluid large teal submit button" id="signInButton">Sign In</div>
       </div>
       <div class="ui error message"></div>
     </form>

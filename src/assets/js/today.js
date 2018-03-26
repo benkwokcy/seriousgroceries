@@ -1,21 +1,13 @@
 'use strict';
 
-// $(document)
-//   .ready(function() {
-
-//     // create sidebar and attach to menu open
-//     $('.ui.sidebar')
-//       .sidebar('attach events', '.toc.item')
-//     ;
-
-//   })
-// ;
-
-// '<tr><td>' + data[i]["name"] + '</td><td>' + data[i]["ingredients"] + '</td></tr>'
+$(document).ready(function() {
+  $('.ui.dropdown')
+  .dropdown()
+  ;
+});
 
 $(function(){
   $.getJSON("assets/today.json", function(data) {
-    // console.log('success');
     $.each(data, function(i,dish) {
       $('#cards').append(
         `<div class=\"ui card\">
@@ -34,5 +26,5 @@ $(function(){
           </div>
         </div>`);
     });
-  });
+  }); 
 });
