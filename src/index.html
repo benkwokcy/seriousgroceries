@@ -14,15 +14,29 @@
   <script defer src="vendors/semantic/dist/semantic.min.js"></script>
   <script defer src="assets/js/index.js"></script>
 
+  <!-- <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyA9NSEgu1dEjIsFcI1UAWppnxJZOGuQFSE",
+      authDomain: "seriousgroceries.firebaseapp.com",
+      databaseURL: "https://seriousgroceries.firebaseio.com",
+      projectId: "seriousgroceries",
+      storageBucket: "seriousgroceries.appspot.com",
+      messagingSenderId: "743447851329"
+    };
+    firebase.initializeApp(config);
+  </script> -->
+
   <!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
-  <script defer src="/__/firebase/4.11.0/firebase-app.js"></script>
+  <script src="/__/firebase/4.11.0/firebase-app.js"></script>
   <!-- features -->
-  <script defer src="/__/firebase/4.11.0/firebase-auth.js"></script>
-  <script defer src="/__/firebase/4.11.0/firebase-database.js"></script>
-  <script defer src="/__/firebase/4.11.0/firebase-messaging.js"></script>
-  <script defer src="/__/firebase/4.11.0/firebase-storage.js"></script>
+  <script src="/__/firebase/4.11.0/firebase-auth.js"></script>
+  <!-- <script src="/__/firebase/4.11.0/firebase-database.js"></script>
+  <script src="/__/firebase/4.11.0/firebase-messaging.js"></script>
+  <script src="/__/firebase/4.11.0/firebase-storage.js"></script> -->
   <!-- init -->
-  <script defer src="/__/firebase/init.js"></script>
+  <script src="/__/firebase/init.js"></script>
 
   <style>
     .ui.inverted.segment {
@@ -55,7 +69,7 @@
         <a class="toc item">
           <i class="sidebar icon"></i>
         </a>
-        <a href="today.html" class="active item">
+        <a href="today.html" class="item">
             <img class="logo" src="assets/img/logo128.png">
             &nbsp;Serious Groceries
         </a>
@@ -87,7 +101,7 @@
         <p>It scrapes the sales flyers of nearby grocery stores and matches the data against a personal library of dish recipes that you chose. This way, you can easily see the top dishes that can be shopped for cheaply.</p>
       </div>
       <div class="eight wide column">
-          <h2>How is it different from Flipp/Pepperplate/etc?</h2>
+          <h2>How is this different from Flipp/Pepperplate/etc?</h2>
           <p>Unlike flyer aggregation apps like Flipp, this app recommends specific dishes to cook. Unlike grocery organization apps and recipe recommendation apps like Pepperplate, CookSmarts, Plan to Eat, and Paprika, this app takes into account the items that are currently on sale nearby.</p>
       </div>
     </div>
