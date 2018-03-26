@@ -1,4 +1,8 @@
-## Serious Groceries - a flyer scraping website for cooks.
+## Serious Groceries - a flyer scraping website for home cooks.
+
+This repository contains the files for generating the [SeriousGroceries website](https://seriousgroceries.firebaseapp.com/).
+
+### About
 
 Serious Groceries helps you decide what to cook for a meal on a limited budget in Victoria. 
 
@@ -10,6 +14,6 @@ Unlike flyer aggregation apps like Flipp, this app recommends specific dishes to
 
 This source code is licensed under the MIT license.
 
----
+### Authors
 
 Made by Benjamin Kwok and Jonathan Zhang.
