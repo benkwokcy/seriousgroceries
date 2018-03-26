@@ -1,10 +1,9 @@
 'use strict';
 
-$(document)
-    .ready(function() {
-        $('.ui.form')
-        .form({
-            fields: {
+$(document).ready(function() {
+
+    $('.ui.form').form({
+        fields: {
             username: {
                 identifier  : 'username',
                 rules: [
@@ -32,8 +31,11 @@ $(document)
                 }
                 ]
             }
-            }
-        })
-        ;
-    })
-;
+        }
+    });
+
+    $('.ui.dropdown')
+    .dropdown()
+    ;
+
+});

@@ -10,8 +10,22 @@
   <link rel="stylesheet" type="text/css" href="vendors/semantic/dist/semantic.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/choice.css">
 
-  <script defer src="vendors/jquery.min.js"></script>
-  <script defer src="assets/js/choice.js"></script>
+  <script src="vendors/jquery.min.js"></script>
+  <script src="vendors/semantic/dist/semantic.min.js"></script>
+  <script src="assets/js/choice.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+  <script>
+    var config = {
+      apiKey: "AIzaSyA9NSEgu1dEjIsFcI1UAWppnxJZOGuQFSE",
+      authDomain: "seriousgroceries.firebaseapp.com",
+      databaseURL: "https://seriousgroceries.firebaseio.com",
+      projectId: "seriousgroceries",
+      storageBucket: "seriousgroceries.appspot.com",
+      messagingSenderId: "743447851329"
+    };
+    firebase.initializeApp(config);
+  </script>
   
 </head>
 <body>
@@ -24,15 +38,16 @@
       </a>
       <a href="dishes.html" class="header item">My Dishes</a>
       <div class="right menu">
-            <div class="item">
-                <a class="ui button" href="signin.html">Sign in</a>
+        <a class="ui dropdown item">
+            <i class="big user circle outline icon"></i>  
+            <div class="menu">
+              <div class="item">Log Out</div>
             </div>
-            <div class="item">
-                <a class="ui primary button" href="signup.html">Sign Up</a>
-            </div>
-          </div>
+        </a>
+      </div>
     </div>
   </div>
+
 
   <div class="ui middle aligned center aligned grid">
     <div class="column">

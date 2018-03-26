@@ -51,7 +51,7 @@ $(document).ready(function() {
     }
   });
 
-  document.querySelector('#signInButton').addEventListener('click', function(e) {
+  document.querySelector('#signUpButton').addEventListener('click', function(e) {
       if( $('.ui.form').form('is valid')) {
           var email, password;
 
@@ -65,6 +65,13 @@ $(document).ready(function() {
           });
       }
   });
+
+//Handle Account Status
+firebase.auth().onAuthStateChanged(user => {
+  if(user) {
+    window.location = 'choice.html'; //After successful login, user will be redirected to home.html
+  }
+});
 
   // document.querySelector('#sign-out').addEventListener('click', function(e) {
   //     e.preventDefault();
