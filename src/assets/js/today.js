@@ -1,9 +1,17 @@
 'use strict';
 
 $(document).ready(function() {
-  $('.ui.dropdown')
-  .dropdown()
-  ;
+  
+  $('.ui.dropdown').dropdown();
+
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      // User is signed in.
+    } else {
+      // No user is signed in.
+    }
+  });
+
 });
 
 $(function(){
