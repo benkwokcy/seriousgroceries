@@ -10,20 +10,22 @@
   <link rel="stylesheet" type="text/css" href="vendors/semantic/dist/semantic.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/signup.css">
 
-  <script defer src="vendors/jquery.min.js"></script>
-  <script defer src="vendors/semantic/dist/semantic.min.js"></script>
-  <script defer src="assets/js/signup.js"></script>
+  <script src="vendors/jquery.min.js"></script>
+  <script src="vendors/semantic/dist/semantic.min.js"></script>
+  <script src="assets/js/signup.js"></script>
 
-  <!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
-  <!-- update the version number as needed -->
-  <script defer src="/__/firebase/4.11.0/firebase-app.js"></script>
-  <!-- include only the Firebase features as you need -->
-  <script defer src="/__/firebase/4.11.0/firebase-auth.js"></script>
-  <script defer src="/__/firebase/4.11.0/firebase-database.js"></script>
-  <script defer src="/__/firebase/4.11.0/firebase-messaging.js"></script>
-  <script defer src="/__/firebase/4.11.0/firebase-storage.js"></script>
-  <!-- initialize the SDK after all desired features are loaded -->
-  <script defer src="/__/firebase/init.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+  <script>
+    var config = {
+      apiKey: "AIzaSyA9NSEgu1dEjIsFcI1UAWppnxJZOGuQFSE",
+      authDomain: "seriousgroceries.firebaseapp.com",
+      databaseURL: "https://seriousgroceries.firebaseio.com",
+      projectId: "seriousgroceries",
+      storageBucket: "seriousgroceries.appspot.com",
+      messagingSenderId: "743447851329"
+    };
+    firebase.initializeApp(config);
+  </script>
 
 </head>
 <body>
@@ -49,26 +51,28 @@
   <div class="ui middle aligned center aligned grid">
     <div class="column">
      
-      <div class="ui steps">
-        <div class="active step">
-          <i class="user icon"></i>
-          <div class="content">
-            <div class="title">Step 1:</div>
-            <div class="description">Create account</div>
+      <div class="row">
+        <div class="ui steps">
+          <div class="active step">
+            <i class="user icon"></i>
+            <div class="content">
+              <div class="title">Step 1:</div>
+              <div class="description">Create account</div>
+            </div>
           </div>
-        </div>
-        <div class="disabled step">
-          <i class="star icon"></i>
-          <div class="content">
-            <div class="title">Step 2:</div>
-            <div class="description">Enter food choices</div>
+          <div class="disabled step">
+            <i class="star icon"></i>
+            <div class="content">
+              <div class="title">Step 2:</div>
+              <div class="description">Enter food choices</div>
+            </div>
           </div>
-        </div>
-        <div class="disabled step">
-          <i class="star icon"></i>
-          <div class="content">
-            <div class="title">Step 3:</div>
-            <div class="description">Find nearby stores</div>
+          <div class="disabled step">
+            <i class="star icon"></i>
+            <div class="content">
+              <div class="title">Step 3:</div>
+              <div class="description">Find nearby stores</div>
+            </div>
           </div>
         </div>
       </div>
@@ -102,7 +106,7 @@
               <input type="password" name="password" placeholder="Create a password">
             </div>
           </div>
-          <div class="ui fluid large teal submit button" onclick="emptyUser()">
+          <div class="ui fluid large teal submit button" id="signInButton">
             Sign up for Serious Groceries
           </div>
         </div>
