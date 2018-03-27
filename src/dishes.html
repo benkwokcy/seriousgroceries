@@ -10,9 +10,9 @@
   <link rel="stylesheet" type="text/css" href="vendors/semantic/dist/semantic.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/dishes.css">
 
-  <script defer src="vendors/jquery.min.js"></script>
-  <script defer src="vendors/semantic/dist/semantic.min.js"></script>
-  <script defer src="assets/js/dishes.js"></script>
+  <script src="vendors/jquery.min.js"></script>
+  <script src="vendors/semantic/dist/semantic.min.js"></script>
+  <script src="assets/js/dishes.js"></script>
 
   <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
   <script>
@@ -30,19 +30,8 @@
 </head>
 <body>
 
-  <!-- Sidebar Menu -->
-  <!-- <div class="ui vertical inverted sidebar menu">
-    <a class="active item" href="index.html">Home</a>
-    <a class="item" href="signin.html">Sign In</a>
-    <a class="item" href="sign.html">Signup</a>
-  </div> -->
-
-  <!-- Page Contents -->
   <div class="ui fixed menu">
     <div class="ui container">
-      <!-- <a class="toc item">
-        <i class="sidebar icon"></i>
-      </a> -->
       <a href="today.html" class="header item">
         <img class="logo" src="assets/img/logo128.png">
         Serious Groceries
@@ -62,34 +51,50 @@
   <div class="ui main container">
 
     <h2 class="ui dividing header">My Dishes</h2>
-    <h3 class="ui dividing header">New Recipe:</h3>
 
-    <div class="ui form">
-      <div class="fields">
-        <div class="field">
-          <label>Name</label>
-          <input type="text">
+    <div class="ui grid">
+      <div class="row">
+        <div class="eight wide column">
+            <button class="ui blue button" id="addDish">Add a new recipe</button>
         </div>
-        <div class="ten wide field">
-            <label>Ingredients</label>
-            <div class="ui action input">
-                <input type="text">
-                <button class="ui button">Add</button>
+        <div class="eight wide right aligned column">
+          <div class="ui category search">
+            <div class="ui icon input">
+              <input class="prompt" placeholder="Search recipes" type="text">
+              <i class="search icon"></i>
             </div>
+          </div>
         </div>
-        <!-- <div class="field"><button class="ui button">Add</button></div> -->
       </div>
     </div>
 
-    <h3 class="ui left dividing header">Recipe Bank:</h3>
-    <div class="ui right aligned category search">
-      <div class="ui icon input">
-        <input class="prompt" placeholder="Search recipes" type="text">
-        <i class="search icon"></i>
+    <div class="ui modal">
+      <i class="close icon"></i>
+      <div class="header">
+        New Recipe
+      </div>
+      <div class="image content">
+        <div class="ui medium image">
+          <img src="/vendors/semantic/examples/assets/images/avatar/nan.jpg">
+        </div>
+        <div class="description">
+          <div class="ui header">We've auto-chosen a profile image for you.</div>
+          <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+          <p>Is it okay to use this photo?</p>
+        </div>
+      </div>
+      <div class="actions">
+        <div class="ui black deny button">
+          Cancel
+        </div>
+        <div class="ui positive right labeled icon button">
+          Done
+          <i class="checkmark icon"></i>
+        </div>
       </div>
     </div>
-    
-    <table class="ui unstackable celled striped table">
+
+    <table class="ui unstackable selectable celled striped table">
       <thead>
         <tr>
           <th>Name</th>

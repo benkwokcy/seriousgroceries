@@ -7,9 +7,7 @@ $(function(){
       $('#table').append('<tr><td>' + data[i]["name"] + '</td><td>' + data[i]["ingredients"] + '</td></tr>');
     });
   });
+  $( "#addDish" ).click(function() {
+    $('.ui.modal').modal('show');
+  });
 });
-
-// function add() {
-//   var input = document.getElementsByClassName("ui.action.input");
-//   var text = input.innerHTML;
-// }
