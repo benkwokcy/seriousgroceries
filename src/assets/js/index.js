@@ -8,18 +8,5 @@ $(document)
       .sidebar('attach events', '.toc.item')
     ;
 
-    // // initialize modal
-    // $('.ui.modal')
-    //   .modal()
-    // ;
-    
-    // $('.test.modal')
-    //     .modal('attach events', '#mymodalg', 'show')
-    // ;
-
-    // $("#loginmodal").click(function() {
-    //     $.modal('show');
-    // });
-
   })
 ;
