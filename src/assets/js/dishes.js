@@ -8,6 +8,11 @@ $(function(){
     });
   });
   $( "#addDish" ).click(function() {
-    $('.ui.modal').modal('show');
+    $('.ui.modal')
+      .modal({
+        inverted: true
+      })
+      .modal('show')
+    ;
   });
 });
