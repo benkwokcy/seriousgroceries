@@ -1,0 +1,32 @@
+[debug] [2018-04-05T03:53:48.040Z] ----------------------------------------------------------------------
+[debug] [2018-04-05T03:53:48.042Z] Command:       /Users/benkwok/.nvm/versions/node/v8.9.4/bin/node /Users/benkwok/.nvm/versions/node/v8.9.4/bin/firebase serve
+[debug] [2018-04-05T03:53:48.042Z] CLI Version:   3.18.0
+[debug] [2018-04-05T03:53:48.042Z] Platform:      darwin
+[debug] [2018-04-05T03:53:48.042Z] Node Version:  v8.9.4
+[debug] [2018-04-05T03:53:48.043Z] Time:          Wed Apr 04 2018 20:53:48 GMT-0700 (PDT)
+[debug] [2018-04-05T03:53:48.043Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-04-05T03:53:48.053Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-04-05T03:53:48.053Z] > authorizing via signed-in user
+[debug] [2018-04-05T03:53:48.055Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/seriousgroceries  
+  
+ Wed Apr 04 2018 20:53:48 GMT-0700 (PDT)
+[debug] [2018-04-05T03:53:48.580Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-05T03:53:48.580Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/seriousgroceries/tokens  
+  
+ Wed Apr 04 2018 20:53:48 GMT-0700 (PDT)
+[debug] [2018-04-05T03:53:48.965Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-05T03:53:48.966Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/seriousgroceries  
+  
+ Wed Apr 04 2018 20:53:48 GMT-0700 (PDT)
+[debug] [2018-04-05T03:53:49.259Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/benkwok/Repositories/SeriousGroceries/seriousgroceries'...
+[info] 
+[debug] [2018-04-05T03:53:49.262Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/743447851329/clients/_:getWebAppConfig  
+  
+ Wed Apr 04 2018 20:53:49 GMT-0700 (PDT)
+[debug] [2018-04-05T03:53:49.634Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: src
+[info] ✔  hosting: Local server: http://localhost:5000
+
