@@ -1,5 +1,6 @@
 body {
   background-color: #FFFFFF;
+  height: auto !important;
 }
 .ui.menu .item img.logo {
   margin-right: 1.5em;
@@ -13,4 +14,7 @@ body {
 .ui.footer.segment {
   margin: 5em 0em 0em;
   padding: 5em 0em;
+  /* position: absolute; */
+  width: 100%;
+  bottom: 0;
 }

@@ -1,5 +1,6 @@
 body {
 	background-color: #FFFFFF;
+	height: auto !important;
 }
 .ui.menu .item img.logo {
 	margin-right: 1.5em;
@@ -14,3 +15,4 @@ body {
 	margin: 5em 0em 0em;
 	padding: 5em 0em;
 }
+
