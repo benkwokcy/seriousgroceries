@@ -10,6 +10,7 @@
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="stylesheet" type="text/css" href="vendors/semantic/dist/semantic.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/dishes.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/menu.css">
 
   <script src="vendors/jquery.min.js"></script>
   <script src="vendors/semantic/dist/semantic.min.js"></script>
@@ -31,20 +32,28 @@
 </head>
 <body>
 
-  <div class="ui fixed menu">
+  <div class="ui secondary pointing menu">
     <div class="ui container">
-      <a href="today.html" class="header item">
+
+      <a href="index.html" class="item">
         <img class="logo" src="assets/img/logo128.png">
-        Serious Groceries
       </a>
-      <a href="dishes.html" class="header item">My Dishes</a>
+      <a href="today.html" class="item">
+        Today's Options
+      </a>
+      <a href="dishes.html" class="active item">
+          My Dishes
+      </a>
       <div class="right menu">
-        <div class="item">
-            <a class="ui button" href="signin.html">Log in</a>
-        </div>
-        <div class="item">
-            <a class="ui primary button" href="signup.html">Sign Up</a>
-        </div>
+        <a href="signin.html" class="ui item" id="loginButton">
+          Log In
+        </a>
+        <a href="signup.html" class="ui item" id="signupButton">
+          Sign Up
+        </a>
+        <a class="ui item" id="logoutButton">
+          Log Out
+        </a>
       </div>
     </div>
   </div>
@@ -52,7 +61,6 @@
   <div class="ui main container">
 
     <h2 class="ui dividing header">My Dishes</h2>
-
     <div class="ui grid">
       <div class="row">
         <div class="eight wide column">
@@ -76,20 +84,33 @@
       </div>
       <div class="image content">
         <div class="ui medium image">
-          <img src="/vendors/semantic/examples/assets/images/avatar/nan.jpg">
+          <img src="vendors/semantic/examples/assets/images/avatar/nan.jpg">
         </div>
         <div class="description">
-          <!-- <div class="ui header">We've auto-chosen a profile image for you.</div> -->
-          <!-- <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
-          <p>Is it okay to use this photo?</p> -->
           <form class="ui form">
               <div class="field">
                 <label>Name</label>
                 <input name="first-name" placeholder="First Name" type="text">
               </div>
               <div class="field">
-                <label>Ingredients</label>
+                <label>Main Ingredients</label>
                 <input name="last-name" placeholder="Last Name" type="text">
+              </div>
+              <div class="field">
+                <label>Secondary Ingredients</label>
+                <input name="last-name" placeholder="Last Name" type="text">
+              </div>
+              <div class="field">
+                <label>Category</label>
+                <div class="ui selection dropdown">
+                  <input name="gender" type="hidden">
+                  <i class="dropdown icon"></i>
+                  <div class="default text">Gender</div>
+                  <div class="menu">
+                    <div class="item" data-value="1">Private</div>
+                    <div class="item" data-value="0">Public</div>
+                  </div>
+                </div>
               </div>
               <!-- <button class="ui button" type="submit">Submit</button> -->
             </form>

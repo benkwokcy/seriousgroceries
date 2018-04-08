@@ -10,8 +10,11 @@
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="stylesheet" type="text/css" href="vendors/semantic/dist/semantic.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/privacy.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/menu.css">
 
-  <script src="vendors/semantic/dist/semantic.min.js"></script>  
+  <script src="vendors/jquery.min.js"></script>
+  <script src="vendors/semantic/dist/semantic.min.js"></script>
+  <script src="assets/js/privacy.js"></script>
 
   <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
   <script>
@@ -28,23 +31,30 @@
 </head>
 <body>
 
-  <div class="ui fixed menu">
-    <div class="ui container">
-      <a href="today.html" class="header item">
-        <img class="logo" src="assets/img/logo128.png">
-        Serious Groceries
-      </a>
-      <a href="dishes.html" class="header item">My Dishes</a>
-      <div class="right menu">
-            <div class="item">
-                <a class="ui button" href="signin.html">Sign in</a>
-            </div>
-            <div class="item">
-                <a class="ui primary button" href="signup.html">Sign Up</a>
-            </div>
-          </div>
-    </div>
-  </div>
+	<div class="ui pointing menu">
+		<div class="ui container">
+			<a href="index.html" class="item">
+				<img class="logo" src="assets/img/logo128.png">
+			</a>
+			<a href="today.html" class="item">
+				Today's Options
+			</a>
+			<a href="dishes.html" class="item">
+					My Dishes
+			</a>
+			<div class="right menu">
+				<a href="signin.html" class="ui item" id="loginButton">
+					Log In
+				</a>
+				<a href="signup.html" class="ui item" id="signupButton">
+					Sign Up
+				</a>
+				<a class="ui item" id="logoutButton">
+					Log Out
+				</a>
+			</div>
+		</div>
+	</div>
 
   <div class="ui main text container">
     <h1 class="ui header">Privacy Policy</h1>
