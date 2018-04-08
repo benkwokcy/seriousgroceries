@@ -2,10 +2,6 @@ body {
   background-color: #FFFFFF;
   height: auto !important;
 }
-.ui.menu .item {
-  height: 55px;
-  vertical-align: middle;
-}
 .main.container {
   margin-top: 3em;
 }
