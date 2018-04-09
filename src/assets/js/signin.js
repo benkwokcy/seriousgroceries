@@ -1,8 +1,12 @@
 'use strict';
 
-$(document).ready(function() {
+// Run when DOM is ready
+$(function() {
 
-	// Show error message if form is filled incorrectly
+	//Sign in flow for Google Sign-In
+	var provider = new firebase.auth.GoogleAuthProvider();
+
+	// Set validation rules for form
 	$('.ui.form').form({
 		fields: {
 			email: {
@@ -42,16 +46,43 @@ $(document).ready(function() {
 			let email = $('.ui.form').form('get value', 'email');
 			let password = $('.ui.form').form('get value', 'password');
 			firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
-				console.log(error.code);
-				console.log(error.message);
+				var errorCode = error.code;
+      			var errorMessage = error.message;
+				console.log(errorCode);
+				console.log(errorMessage);
+				if (errorCode == 'auth/wrong-password') {
+					alert('Incorrect password.');
+				} else if (errorCode == 'auth/user-not-found') {
+					alert('Account not found.');
+				}
 			});
 		}
 	});
 
-	// document.querySelector('#sign-out').addEventListener('click', function(e) {
-	//     e.preventDefault();
-	//     e.stopPropagation();
-	//     firebase.auth().signOut();
-	// });
+	document.querySelector('#google').addEventListener('click', function(e) {
+		firebase.auth().signInWithPopup(provider).then(function(result) {
+			// This gives you a Google Access Token. You can use it to access the Google API.
+			var token = result.credential.accessToken;
+			// The signed-in user info.
+			var user = result.user;
+			// ...
+		  }).catch(function(error) {
+			// Handle Errors here.
+			var errorCode = error.code;
+			var errorMessage = error.message;
+			// The email of the user's account used.
+			var email = error.email;
+			// The firebase.auth.AuthCredential type that was used.
+			var credential = error.credential;
+			// ...
+		  });
+	});
+
+	//Handle Account Status
+	firebase.auth().onAuthStateChanged(user => {
+		if (user) {
+			window.location = 'today.html'; // After successful login, user will be redirected to home.html
+		}
+	});
 
 });

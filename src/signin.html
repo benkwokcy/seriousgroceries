@@ -15,9 +15,6 @@
   <script src="vendors/semantic/dist/semantic.min.js"></script>
   <script src="assets/js/signin.js"></script>
 
-  <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
-  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
-
   <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
   <script>
     var config = {
@@ -42,7 +39,7 @@
             <img src="assets/img/logo128.png" class="ui centered tiny image">
         </a>
       </div>
-
+    
       <h2 class="ui teal image header">
         <div class="content">
           Sign In
@@ -71,7 +68,10 @@
         <div class="ui error message"></div>
       </form>
 
-      <div id="firebaseui-auth-container"></div>
+      <div class="ui fluid large blue button" id="google">
+          <i class="google icon"></i>
+          Sign in with Google
+        </div>
 
       <div class="ui message">
         New to Serious Groceries? <a href="signup.html">Create an account</a>.

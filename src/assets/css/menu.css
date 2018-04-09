@@ -3,7 +3,7 @@
 	vertical-align: middle;
 }
 .ui.secondary.pointing.menu .ui.container .item:hover {
-	border-bottom-color: rgb(103, 107, 112);
+	border-bottom-color: rgb(139, 143, 148);
 	border-bottom-width: 2px;
 	border-bottom-style: solid;
 	margin-bottom: -2px;
