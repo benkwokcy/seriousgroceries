@@ -2,11 +2,20 @@ body {
   background-color: rgb(235, 235, 235);
 }
 body > .grid {
-  height: 100%;
+  height: 90%;
 }
 .image {
   margin-top: -100px;
 }
 .column {
-  max-width: 450px;
+  max-width: 400px;
+}
+#floatRight {
+  float: right;
+}
+.ui.stacked.segment {
+  text-align: left;
+}
+.ui.stacked.segment .field {
+  margin: 0.3em 0em 1em;
 }
