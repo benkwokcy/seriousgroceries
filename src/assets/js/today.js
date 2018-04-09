@@ -9,17 +9,6 @@ $(function() {
     on: 'hover'
   });
 
-  // Hide
-  firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
-      // User is signed in.
-      $('#loginButton').hide();
-      $('#signupButton').hide();
-    } else {
-      // No user is signed in.
-      $('#logoutButton').hide();
-    }
-  });
 });
 
 // Populates table 1 from JSON
@@ -51,16 +40,16 @@ $.getJSON("assets/today.json", function(data) {
           <a class=\"friends\">Available at: ` + data[i]["location"] + `</a>
         </div>
 
-      </div>`);
-    });
-  }); 
+    </div>`);
+  });
+}); 
 
-  // Populate table 2 from JSON
+// Populate table 2 from JSON
 $.getJSON("assets/quick.json", function(data) {
   $.each(data, function(i,dish) {
     $('#cards2').append(
       `<div class=\"card\">
-
+      
         <div class=\"blurring image\">
           <div class=\"ui inverted dimmer\">
             <div class=\"content\">
@@ -84,6 +73,6 @@ $.getJSON("assets/quick.json", function(data) {
           <a class=\"friends\">Available at: ` + data[i]["location"] + `</a>
         </div>
 
-      </div>`);
-    });
-  }); 
+    </div>`);
+  });
+}); 
