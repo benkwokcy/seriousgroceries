@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta name="description" content="Serious Groceries helps you decide what to cook for dinner on a limited budget in Victoria.">
-  <title>Log In</title>
+  <title>Sign In</title>
 
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="stylesheet" type="text/css" href="vendors/semantic/dist/semantic.min.css">
@@ -14,6 +14,9 @@
   <script src="vendors/jquery.min.js"></script>
   <script src="vendors/semantic/dist/semantic.min.js"></script>
   <script src="assets/js/signin.js"></script>
+
+  <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
 
   <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
   <script>
@@ -31,44 +34,59 @@
 </head>
 <body>
 
-<div class="ui middle aligned center aligned grid">
-  <div class="column">
-    <div class="row">
-      <a href="index.html">
-          <img src="assets/img/logo128.png" class="ui centered tiny image">
-      </a>
-    </div>
-    <h2 class="ui teal image header">
-      <div class="content">
-        Log In
-      </div>
-    </h2>
-    <form class="ui large form" method="POST">
-      <div class="ui stacked segment">
-        Email
-        <div class="field">
-          <div class="ui left icon input">
-            <i class="user icon"></i>
-            <input type="text" name="email" placeholder="E-mail address">
-          </div>
-        </div>
-        Password
-        <div class="field">
-          <div class="ui left icon input">
-            <i class="lock icon"></i>
-            <input type="password" name="password" placeholder="Password">
-          </div>
-        </div>
-        <div class="ui fluid large teal submit button" id="signInButton">Sign In</div>
-      </div>
-      <div class="ui error message"></div>
-    </form>
+  <div class="ui middle aligned center aligned grid">
+    <div class="column">
 
-    <div class="ui message">
-      New to Serious Groceries? <a href="signup.html">Create an account</a>.
+      <div class="row">
+        <a href="index.html">
+            <img src="assets/img/logo128.png" class="ui centered tiny image">
+        </a>
+      </div>
+
+      <h2 class="ui teal image header">
+        <div class="content">
+          Sign In
+        </div>
+      </h2>
+
+      <form class="ui large form" method="POST">
+        <div class="ui stacked segment">
+          Email
+          <div class="field">
+            <div class="ui left icon input">
+              <i class="user icon"></i>
+              <input type="text" name="email" placeholder="E-mail address">
+            </div>
+          </div>
+          Password
+          <a id="floatRight" href="#">Forgot your password?</a>
+          <div class="field">
+            <div class="ui left icon input">
+              <i class="lock icon"></i>
+              <input type="password" name="password" placeholder="Password">
+            </div>
+          </div>
+          <div class="ui fluid large teal submit button" id="signInButton">Sign In</div>
+        </div>
+        <div class="ui error message"></div>
+      </form>
+
+      <div id="firebaseui-auth-container"></div>
+
+      <div class="ui message">
+        New to Serious Groceries? <a href="signup.html">Create an account</a>.
+      </div>
     </div>
   </div>
-</div>
+
+  <div class="ui vertical footer segment">
+    <div class="ui center aligned container">
+      <p>
+        © 2018 All Rights Reserved.&nbsp;
+        <a class="item" href="privacy.html">Privacy Policy</a>
+      </p>
+    </div>
+  </div>
 
 </body>
 
