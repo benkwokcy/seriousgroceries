@@ -1,6 +1,7 @@
 'use strict';
 
-$(function(){
+// Run when DOM is ready
+$(function() {
 
   // Populate table from server
   $.getJSON("assets/table.json", function(data) {
@@ -28,12 +29,20 @@ $(function(){
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       // User is signed in.
-      $('#loginButton').hide();
-      $('#signupButton').hide();
+      $('#signin').hide();
+      $('#signup').hide();
     } else {
       // No user is signed in.
-      $('#logoutButton').hide();
+      $('#signout').hide();
     }
+  });
+
+	// document.querySelector('#signout').addEventListener('click', function(e) {
+  // });
+  
+  // Sign out user when sign out button is clicked.
+  $('signout').bind('click', function() {
+    firebase.auth().signOut();
   });
 
 });

@@ -1,5 +1,6 @@
 'use strict';
 
-$(document).ready(function() {
+// Run when DOM is ready
+$(function() {
 
 });

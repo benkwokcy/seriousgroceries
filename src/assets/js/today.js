@@ -1,6 +1,7 @@
 'use strict';
 
-$(document).ready(function() {
+// Run when DOM is ready
+$(function() {
   
   $('.ui.dropdown').dropdown();
 
@@ -8,6 +9,7 @@ $(document).ready(function() {
     on: 'hover'
   });
 
+  // Hide
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       // User is signed in.
