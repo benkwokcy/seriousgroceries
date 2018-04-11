@@ -3,9 +3,6 @@
 // Run when DOM is ready
 $(function() {
 
-	//Sign in flow for Google Sign-In
-	var provider = new firebase.auth.GoogleAuthProvider();
-
 	// Set validation rules for form
 	$('.ui.form').form({
 		fields: {
@@ -59,6 +56,8 @@ $(function() {
 		}
 	});
 
+	//Sign in flow for Google Sign-In
+	var provider = new firebase.auth.GoogleAuthProvider();
 	document.querySelector('#google').addEventListener('click', function(e) {
 		firebase.auth().signInWithPopup(provider).then(function(result) {
 			// This gives you a Google Access Token. You can use it to access the Google API.
