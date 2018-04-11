@@ -1,41 +1,32 @@
-[debug] [2018-04-09T05:18:39.206Z] ----------------------------------------------------------------------
-[debug] [2018-04-09T05:18:39.208Z] Command:       /Users/benkwok/.nvm/versions/node/v8.9.4/bin/node /Users/benkwok/.nvm/versions/node/v8.9.4/bin/firebase serve
-[debug] [2018-04-09T05:18:39.208Z] CLI Version:   3.18.0
-[debug] [2018-04-09T05:18:39.208Z] Platform:      darwin
-[debug] [2018-04-09T05:18:39.208Z] Node Version:  v8.9.4
-[debug] [2018-04-09T05:18:39.208Z] Time:          Sun Apr 08 2018 22:18:39 GMT-0700 (PDT)
-[debug] [2018-04-09T05:18:39.208Z] ----------------------------------------------------------------------
+[debug] [2018-04-11T05:31:37.390Z] ----------------------------------------------------------------------
+[debug] [2018-04-11T05:31:37.391Z] Command:       /Users/benkwok/.nvm/versions/node/v8.9.4/bin/node /Users/benkwok/.nvm/versions/node/v8.9.4/bin/firebase serve
+[debug] [2018-04-11T05:31:37.392Z] CLI Version:   3.18.2
+[debug] [2018-04-11T05:31:37.392Z] Platform:      darwin
+[debug] [2018-04-11T05:31:37.392Z] Node Version:  v8.9.4
+[debug] [2018-04-11T05:31:37.392Z] Time:          Tue Apr 10 2018 22:31:37 GMT-0700 (PDT)
+[debug] [2018-04-11T05:31:37.392Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-04-09T05:18:39.221Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-04-09T05:18:39.221Z] > authorizing via signed-in user
-[debug] [2018-04-09T05:18:39.223Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-04-09T05:18:39.224Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- { refresh_token: '1/c49220nY1-UiI3UdLLOFUVqPAQqknVEBmxd9hYZteUY',
-  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
-  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
-  grant_type: 'refresh_token',
-  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Sun Apr 08 2018 22:18:39 GMT-0700 (PDT)
-[debug] [2018-04-09T05:18:39.372Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-09T05:18:39.396Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/seriousgroceries  
+[debug] [2018-04-11T05:31:37.401Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-04-11T05:31:37.402Z] > authorizing via signed-in user
+[debug] [2018-04-11T05:31:37.403Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/seriousgroceries  
   
- Sun Apr 08 2018 22:18:39 GMT-0700 (PDT)
-[debug] [2018-04-09T05:18:39.830Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-09T05:18:39.831Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/seriousgroceries/tokens  
+ Tue Apr 10 2018 22:31:37 GMT-0700 (PDT)
+[debug] [2018-04-11T05:31:37.808Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-11T05:31:37.809Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/seriousgroceries/tokens  
   
- Sun Apr 08 2018 22:18:39 GMT-0700 (PDT)
-[debug] [2018-04-09T05:18:40.265Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-09T05:18:40.266Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/seriousgroceries  
+ Tue Apr 10 2018 22:31:37 GMT-0700 (PDT)
+[debug] [2018-04-11T05:31:38.278Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-11T05:31:38.279Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/seriousgroceries  
   
- Sun Apr 08 2018 22:18:40 GMT-0700 (PDT)
-[debug] [2018-04-09T05:18:40.595Z] <<< HTTP RESPONSE 200
+ Tue Apr 10 2018 22:31:38 GMT-0700 (PDT)
+[debug] [2018-04-11T05:31:38.509Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/Users/benkwok/Repositories/SeriousGroceries/seriousgroceries'...
 [info] 
-[debug] [2018-04-09T05:18:40.598Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/743447851329/clients/_:getWebAppConfig  
+[debug] [2018-04-11T05:31:38.511Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/743447851329/clients/_:getWebAppConfig  
   
- Sun Apr 08 2018 22:18:40 GMT-0700 (PDT)
-[debug] [2018-04-09T05:18:40.992Z] <<< HTTP RESPONSE 200
+ Tue Apr 10 2018 22:31:38 GMT-0700 (PDT)
+[debug] [2018-04-11T05:31:38.892Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: src
 [info] ✔  hosting: Local server: http://localhost:5000
 

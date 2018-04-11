@@ -19,117 +19,107 @@
 
   <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
   <script>
-    var config = {
-      apiKey: "AIzaSyA9NSEgu1dEjIsFcI1UAWppnxJZOGuQFSE",
-      authDomain: "seriousgroceries.firebaseapp.com",
-      databaseURL: "https://seriousgroceries.firebaseio.com",
-      projectId: "seriousgroceries",
-      storageBucket: "seriousgroceries.appspot.com",
-      messagingSenderId: "743447851329"
-    };
-    firebase.initializeApp(config);
+	var config = {
+	  apiKey: "AIzaSyA9NSEgu1dEjIsFcI1UAWppnxJZOGuQFSE",
+	  authDomain: "seriousgroceries.firebaseapp.com",
+	  databaseURL: "https://seriousgroceries.firebaseio.com",
+	  projectId: "seriousgroceries",
+	  storageBucket: "seriousgroceries.appspot.com",
+	  messagingSenderId: "743447851329"
+	};
+	firebase.initializeApp(config);
   </script>
 </head>
 <body>
 
-	<div class="ui pointing menu">
+	<div class="ui secondary pointing menu">
 		<div class="ui container">
 			<a href="index.html" class="item">
 				<img class="logo" src="assets/img/logo128.png">
 			</a>
-			<a href="today.html" class="item">
-				Today's Options
-			</a>
-			<a href="dishes.html" class="item">
-					My Dishes
-			</a>
+			<a href="today.html" class="item">Today's Options</a>
+			<a href="dishes.html" class="active item">My Dishes</a>
 			<div class="right menu">
-				<a href="signin.html" class="ui item" id="signin">
-                    Sign In
-				</a>
-				<a href="signup.html" class="ui item" id="signup">
-					Sign Up
-				</a>
-				<a class="ui item" id="signout">
-					Log Out
-				</a>
+				<a href="signin.html" class="ui item" id="signin">Sign In</a>
+				<a href="signup.html" class="ui item" id="signup">Sign Up</a>
+				<a class="ui item" id="signout">Sign Out</a>
 			</div>
 		</div>
 	</div>
 
   <div class="ui main text container">
-    <h1 class="ui header">Privacy Policy</h1>
-    <p>This page informs you of our policies regarding the collection, use and
-        disclosure of Personal Information when you use our Service. We will not use or
-        share your information with anyone except as described in this Privacy Policy.
-        By using the Service, you agree to the collection and use of information in
-        accordance with this policy.
-    </p>
-    <h4>1. Information Collection And Use</h4>
-    <p>While using our Service, we may ask you to provide us with certain personally
-        identifiable information that can be used to contact or identify you.
-        
-        We collect information that your browser sends whenever you visit our Service.
-        This <b>log data </b> may include information such as your computer's
-        Internet Protocol ("IP") address, browser type, browser version, the pages of
-        our Service that you visit, the time and date of your visit, the time spent on
-        those pages and other statistics.
-    </p>
-    <p>
-        <b>Cookies</b> are files with small amount of data, which may include an anonymous
-        unique identifier. We use "cookies" to collect information. You can
-        instruct your browser to refuse all cookies or to indicate when a cookie is
-        being sent.
-    </p>
-    <p>
-        We may employ <b>third party companies</b> and individuals to facilitate our
-        Service. These third parties have access to your Personal Information only to perform these tasks on
-        our behalf and are obligated not to disclose or use it for any other purpose.
-    </p>
-    <h4>2. Security</h4>
-    <p>The security of your Personal Information is important to us, but remember that
-        no method of transmission over the Internet, or method of electronic storage is
-        100% secure. While we strive to use commercially acceptable means to protect
-        your Personal Information, we cannot guarantee its absolute security.
-    </p>
-    <p>
-        Our Service may contain links to other sites that are not operated by us. If you
-        click on a <b>third party link</b>, you will be directed to that third party's site. We
-        strongly advise you to review the Privacy Policy of every site you visit.
-        We have no control over, and assume no responsibility for the content, privacy
-        policies or practices of any third party sites or services.
-    </p>
-    <p>
-        Our Service does not address <b>anyone under the age of 13</b>.
-        We do not knowingly collect personally identifiable information from children
-        under 13. If you are a parent or guardian and you are aware that your Children
-        has provided us with Personal Information, please contact us. If we discover
-        that a Children under 13 has provided us with Personal Information, we will
-        delete such information from our servers immediately.
-    </p>
-    <h4>Changes To This Privacy Policy</h4>
-    <p>
-        We may update our Privacy Policy from time to time. We will notify you of any
-        changes by posting the new Privacy Policy on this page.
-        You are advised to review this Privacy Policy periodically for any changes.
-        Changes to this Privacy Policy are effective when they are posted on this page.
-    </p>
-    <h4>Contact Us</h4>
-    <p>
-        If you have any questions about this Privacy Policy, please 
-        <a href="mailto:customerservice@seriousgroceries.com">contact us.</a>
-    </p>
-    <p><i>Last updated: February 24, 2018</i></p>
+	<h1 class="ui header">Privacy Policy</h1>
+	<p>This page informs you of our policies regarding the collection, use and
+		disclosure of Personal Information when you use our Service. We will not use or
+		share your information with anyone except as described in this Privacy Policy.
+		By using the Service, you agree to the collection and use of information in
+		accordance with this policy.
+	</p>
+	<h4>1. Information Collection And Use</h4>
+	<p>While using our Service, we may ask you to provide us with certain personally
+		identifiable information that can be used to contact or identify you.
+		
+		We collect information that your browser sends whenever you visit our Service.
+		This <b>log data </b> may include information such as your computer's
+		Internet Protocol ("IP") address, browser type, browser version, the pages of
+		our Service that you visit, the time and date of your visit, the time spent on
+		those pages and other statistics.
+	</p>
+	<p>
+		<b>Cookies</b> are files with small amount of data, which may include an anonymous
+		unique identifier. We use "cookies" to collect information. You can
+		instruct your browser to refuse all cookies or to indicate when a cookie is
+		being sent.
+	</p>
+	<p>
+		We may employ <b>third party companies</b> and individuals to facilitate our
+		Service. These third parties have access to your Personal Information only to perform these tasks on
+		our behalf and are obligated not to disclose or use it for any other purpose.
+	</p>
+	<h4>2. Security</h4>
+	<p>The security of your Personal Information is important to us, but remember that
+		no method of transmission over the Internet, or method of electronic storage is
+		100% secure. While we strive to use commercially acceptable means to protect
+		your Personal Information, we cannot guarantee its absolute security.
+	</p>
+	<p>
+		Our Service may contain links to other sites that are not operated by us. If you
+		click on a <b>third party link</b>, you will be directed to that third party's site. We
+		strongly advise you to review the Privacy Policy of every site you visit.
+		We have no control over, and assume no responsibility for the content, privacy
+		policies or practices of any third party sites or services.
+	</p>
+	<p>
+		Our Service does not address <b>anyone under the age of 13</b>.
+		We do not knowingly collect personally identifiable information from children
+		under 13. If you are a parent or guardian and you are aware that your Children
+		has provided us with Personal Information, please contact us. If we discover
+		that a Children under 13 has provided us with Personal Information, we will
+		delete such information from our servers immediately.
+	</p>
+	<h4>Changes To This Privacy Policy</h4>
+	<p>
+		We may update our Privacy Policy from time to time. We will notify you of any
+		changes by posting the new Privacy Policy on this page.
+		You are advised to review this Privacy Policy periodically for any changes.
+		Changes to this Privacy Policy are effective when they are posted on this page.
+	</p>
+	<h4>Contact Us</h4>
+	<p>
+		If you have any questions about this Privacy Policy, please 
+		<a href="mailto:customerservice@seriousgroceries.com">contact us.</a>
+	</p>
+	<p><i>Last updated: February 24, 2018</i></p>
   </div>
 
   <div class="ui vertical footer segment">
-        <div class="ui center aligned container">
-            <p>
-                © 2018 All Rights Reserved.&nbsp;
-                <a class="item" href="privacy.html">Privacy Policy</a>
-            </p>
-        </div>
-    </div>
+		<div class="ui center aligned container">
+			<p>
+				© 2018 All Rights Reserved.&nbsp;
+				<a class="item" href="privacy.html">Privacy Policy</a>
+			</p>
+		</div>
+	</div>
 </body>
 
 </html>
