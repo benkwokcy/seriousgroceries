@@ -26,6 +26,3 @@ This source code is licensed under the MIT license.
 
 Made by Benjamin Kwok.
 
-### Acknowledgements
-
-
