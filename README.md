@@ -24,7 +24,7 @@ This source code is licensed under the MIT license.
 
 ### Authors
 
-Made by Benjamin Kwok and Jonathan Zhang.
+Made by Benjamin Kwok.
 
 ### Acknowledgements
 
