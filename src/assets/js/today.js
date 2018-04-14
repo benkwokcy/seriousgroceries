@@ -21,7 +21,7 @@ $.getJSON("assets/today.json", function(data) {
           <div class=\"ui inverted dimmer\">
             <div class=\"content\">
               <div class=\"center\">
-                <div class=\"ui blue button\">More</div>
+                <div class=\"ui blue button\">Save</div>
               </div>
             </div>
           </div>
