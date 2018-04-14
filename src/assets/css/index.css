@@ -1,3 +1,21 @@
+/***************
+ *    Menu     *
+ ***************/
+.secondary.pointing.menu .toc.item {
+    display: none;
+}
+.ui.large.secondary.inverted.pointing.menu a.item { 
+    color: rgba(255,255,255,1) !important;
+    font-size: 1.2rem;
+    padding-top: 0.5em;
+}
+.ui.large.secondary.inverted.pointing.menu .right.item a.item:hover { 
+    text-decoration: underline;
+}
+
+/***************
+ *  Masthead   *
+ ***************/
 .masthead.segment {
     min-height: 800px;
 }
@@ -14,6 +32,10 @@
     font-size: 1.7em;
     font-weight: normal;
 }
+
+/***************
+ *    Body     *
+ ***************/
 .ui.vertical.stripe {
     padding: 5em 0em;
 }
@@ -23,17 +45,10 @@
 .ui.vertical.stripe p {
     font-size: 1.1em;
 }
-.secondary.pointing.menu .toc.item {
-    display: none;
-}
-.ui.large.secondary.inverted.pointing.menu a.item { 
-    color: rgba(255,255,255,1) !important;
-    font-size: 1.2rem;
-    padding-top: 0.5em;
-}
-.ui.large.secondary.inverted.pointing.menu a.item:hover { 
-    text-decoration: underline;
-}
+
+/***************
+ *    Media    *
+ ***************/
 @media only screen and (max-width: 700px) {
     .ui.fixed.menu {
         display: none !important;
