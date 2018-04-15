@@ -3,26 +3,46 @@
 // Run when DOM is ready
 $(function() {
 
-  // Populate table from server
-  $.getJSON("assets/table.json", function(data) {
-    $.each(data, function(i,dish) {
-      $('#table').append('<tr><td>' + data[i]["name"] + '</td><td>' + data[i]["ingredients"] + '</td></tr>');
-    });
-  });
+	// Populate Table from Firestore
+	var db = firebase.firestore();
+	populate("sgRecipes", db);
+	populate("userRecipes", db);
 
-  // Show addDish modal menu when button is clicked
-  $("#addDish").click(function() {
-    $('.ui.modal')
-      .modal({
-        inverted: true
-      })
-      .modal('show')
-    ;
-  });
+	// Show addDish modal menu when button is clicked
+	$("#addDish").click(function() {
+		$('.ui.modal').modal({inverted: true}).modal('show');
+	});
 
-  // Dropdown menu for Semantic UI
-  $('.ui.dropdown')
-    .dropdown()
-  ;
+  	// Semantic UI Elements
+  	$('.ui.dropdown').dropdown();
+  	$('.ui.radio.checkbox').checkbox();
 
+	// Add new recipe
+	$("#create").click(function(event) {
+		// event.preventDefault()
+		let recipeName = $('.ui.form').form('get value', 'recipeName');
+		let recipeCategory = $('.ui.form').form('get value', 'recipeCategory');
+		let mainIngredients = $('.ui.form').form('get value', 'mainIngredients');
+		let secondaryIngredients = $('.ui.form').form('get value', 'secondaryIngredients');
+		// let visibility = $('.ui.form').form('is checked', 'private');
+		console.log(recipeName);
+		var dish = {name: recipeName, category: recipeCategory, ingredients: mainIngredients};
+		console.log(dish);
+		db.collection("createRecipes").add(dish)
+		.then(function(docRef) {
+			console.log("Document written with ID: ", docRef.id);
+		})
+		.catch(function(error) {
+			console.error("Error adding document: ", error);
+		});
+	});
+  
 });
+
+function populate(collection, db) {
+	db.collection(collection).get().then(function(querySnapshot) {
+		querySnapshot.forEach(function(doc) {
+			$('#table').append('<tr><td>' + doc.data().name + '</td><td>' + doc.data().ingredients + '</td></tr>');
+		});		
+	});
+}

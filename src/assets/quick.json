@@ -1,25 +1,25 @@
 [
     {
         "name": "Roasted Turkey",
-        "url": "https://images.pexels.com/photos/265393/pexels-photo-265393.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "img": "https://images.pexels.com/photos/265393/pexels-photo-265393.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
         "score": "78",
         "location": "Thrifty Foods",
         "ingredients": "Beef Chuck, Carrot, Celery, Potato"
     }, {
         "name": "Cranberry Sauce",
-        "url": "https://images.pexels.com/photos/306800/pexels-photo-306800.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "img": "https://images.pexels.com/photos/306800/pexels-photo-306800.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
         "score": "95",
         "location": "Fairway Markets",
         "ingredients": "Ground Pork, Sausage, Parsley, Spaghetti"
     }, {
         "name": "Herb Stuffing",
-        "url": "https://atmedia.imgix.net/350a0b2978ac9331581f10cf45f99a32599e4bf6?w=1500&fit=max",
+        "img": "https://atmedia.imgix.net/350a0b2978ac9331581f10cf45f99a32599e4bf6?w=1500&fit=max",
         "score": "90",
         "location": "Pepper's Foods",
         "ingredients": "Ham, Split Pea, Onion"        
     }, {
         "name": "Mashed Potatoes",
-        "url": "https://assets.marthastewart.com/styles/wmax-1500/d30/garlic-mashed-potatoes-a101006/garlic-mashed-potatoes-a101006_horiz.jpg?itok=sFdA2VkU",
+        "img": "https://assets.marthastewart.com/styles/wmax-1500/d30/garlic-mashed-potatoes-a101006/garlic-mashed-potatoes-a101006_horiz.jpg?itok=sFdA2VkU",
         "score": "66",
         "location": "Thrifty Foods",
         "ingredients": "Tofu, Chili Sauce, Ginger"        

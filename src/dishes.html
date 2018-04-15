@@ -73,41 +73,54 @@
     </div>
 
     <div class="ui modal">
-      <i class="close icon"></i>
       <div class="header">
         New Recipe
       </div>
       <div class="image content">
-        <div class="ui medium image">
-          <img src="vendors/semantic/examples/assets/images/avatar/nan.jpg">
-        </div>
         <div class="description">
           <form class="ui form">
-              <div class="field">
-                <label>Name</label>
-                <input name="first-name" placeholder="First Name" type="text">
+              <div class="two fields">
+                <div class="field">
+                  <label>Recipe Name</label>
+                  <input name="recipeName" placeholder="Recipe Name" type="text">
+                </div>
+                <div class="field">
+                    <label>Recipe Category</label>
+                    <div class="ui selection dropdown">
+                      <input name="category" type="hidden">
+                      <i class="dropdown icon"></i>
+                      <div class="default text">Category</div>
+                      <div class="menu">
+                        <div class="item">Vegan</div>
+                        <div class="item">Vegetarian</div>
+                      </div>
+                    </div>
+                </div>
               </div>
               <div class="field">
                 <label>Main Ingredients</label>
-                <input name="last-name" placeholder="Last Name" type="text">
+                <input name="mainIngredients" placeholder="Main Ingredients" type="text">
               </div>
               <div class="field">
                 <label>Secondary Ingredients</label>
-                <input name="last-name" placeholder="Last Name" type="text">
+                <input name="secondaryIngredients" placeholder="Secondary Ingredients" type="text">
               </div>
-              <div class="field">
-                <label>Category</label>
-                <div class="ui selection dropdown">
-                  <input name="gender" type="hidden">
-                  <i class="dropdown icon"></i>
-                  <div class="default text">Gender</div>
-                  <div class="menu">
-                    <div class="item" data-value="1">Private</div>
-                    <div class="item" data-value="0">Public</div>
+
+              <div class="inline fields">
+                <label for="fruit">Visible to other users?</label>
+                  <div class="field">
+                    <div class="ui radio checkbox">
+                      <input name="private" checked="" tabindex="0" class="hidden" type="radio">
+                      <label>No</label>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="ui radio checkbox">
+                      <input name="public" tabindex="0" class="hidden" type="radio">
+                      <label>Yes</label>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <!-- <button class="ui button" type="submit">Submit</button> -->
             </form>
         </div>
       </div>
@@ -115,12 +128,17 @@
         <div class="ui black deny button">
           Cancel
         </div>
-        <div class="ui positive right labeled icon button">
-          Done
+        <div class="ui positive right labeled icon button" id="createRecipes">
+          Create Recipe
           <i class="checkmark icon"></i>
         </div>
       </div>
     </div>
+
+    <div class="ui positive right labeled icon button" id="create">
+        Create Recipe
+        <i class="checkmark icon"></i>
+      </div>
 
     <table class="ui unstackable selectable celled striped table">
       <thead>

@@ -1,0 +1,50 @@
+[debug] [2018-04-15T05:06:34.070Z] ----------------------------------------------------------------------
+[debug] [2018-04-15T05:06:34.072Z] Command:       /Users/benkwok/.nvm/versions/node/v8.9.4/bin/node /Users/benkwok/.nvm/versions/node/v8.9.4/bin/firebase serve
+[debug] [2018-04-15T05:06:34.072Z] CLI Version:   3.18.4
+[debug] [2018-04-15T05:06:34.072Z] Platform:      darwin
+[debug] [2018-04-15T05:06:34.072Z] Node Version:  v8.9.4
+[debug] [2018-04-15T05:06:34.072Z] Time:          Sat Apr 14 2018 22:06:34 GMT-0700 (PDT)
+[debug] [2018-04-15T05:06:34.072Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-04-15T05:06:34.081Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-04-15T05:06:34.081Z] > authorizing via signed-in user
+[debug] [2018-04-15T05:06:34.083Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-04-15T05:06:34.083Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/c49220nY1-UiI3UdLLOFUVqPAQqknVEBmxd9hYZteUY',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sat Apr 14 2018 22:06:34 GMT-0700 (PDT)
+[debug] [2018-04-15T05:06:34.235Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-15T05:06:34.248Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/seriousgroceries  
+  
+ Sat Apr 14 2018 22:06:34 GMT-0700 (PDT)
+[debug] [2018-04-15T05:06:34.729Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-15T05:06:34.730Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/seriousgroceries/tokens  
+  
+ Sat Apr 14 2018 22:06:34 GMT-0700 (PDT)
+[debug] [2018-04-15T05:06:35.177Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-15T05:06:35.178Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/seriousgroceries  
+  
+ Sat Apr 14 2018 22:06:35 GMT-0700 (PDT)
+[debug] [2018-04-15T05:06:35.421Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/benkwok/Repositories/SeriousGroceries/seriousgroceries'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-04-15T05:06:35.987Z] Fetching environment
+[debug] [2018-04-15T05:06:35.988Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/743447851329:getServerAppConfig  
+  
+ Sat Apr 14 2018 22:06:35 GMT-0700 (PDT)
+[debug] [2018-04-15T05:06:35.989Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/743447851329/clients/_:getWebAppConfig  
+  
+ Sat Apr 14 2018 22:06:35 GMT-0700 (PDT)
+[debug] [2018-04-15T05:06:36.330Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-15T05:06:36.330Z] Starting @google-cloud/functions-emulator
+[debug] [2018-04-15T05:06:36.433Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: src
+[info] ✔  hosting: Local server: http://localhost:5000
+
+[debug] [2018-04-15T05:06:37.908Z] Parsing function triggers
+[info] ✔  functions: helloWorld: http://localhost:5001/seriousgroceries/us-central1/helloWorld
