@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="Serious Groceries helps you decide what to cook for dinner on a limited budget in Victoria.">
+  <title>Find Stores</title>
+
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="vendors/semantic/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/find.css">
+
+  <script src="vendors/jquery.min.js"></script>
+  <script src="vendors/semantic/dist/semantic.min.js"></script>
+  <script src="assets/js/find.js"></script>
+  <script src="assets/js/menu.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrIlwWoC4t4CSmtI8092ezRg4jkJITwW0&callback=initMap"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+  <script>
+    var config = {
+      apiKey: "AIzaSyA9NSEgu1dEjIsFcI1UAWppnxJZOGuQFSE",
+      authDomain: "seriousgroceries.firebaseapp.com",
+      databaseURL: "https://seriousgroceries.firebaseio.com",
+      projectId: "seriousgroceries",
+      storageBucket: "seriousgroceries.appspot.com",
+      messagingSenderId: "743447851329"
+    };
+    firebase.initializeApp(config);
+  </script>
+  
+</head>
+<body>
+
+  <div class="ui inverted fixed menu">
+    <div class="ui container">
+      <a href="today.html" class="header item">
+        <img class="logo" src="assets/img/logo128.png">
+        &nbsp;Serious Groceries
+      </a>
+      <div class="right menu">
+        <div class="item">
+          <a class="ui button">Sign Out</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui middle aligned center aligned grid">
+    <div class="column">
+     
+      <div class="ui steps">
+        <div class="completed step">
+          <i class="user icon"></i>
+          <div class="content">
+            <div class="title">Step 1:</div>
+            <div class="description">Create account</div>
+          </div>
+        </div>
+        <div class="completed step">
+          <i class="star icon"></i>
+          <div class="content">
+            <div class="title">Step 2:</div>
+            <div class="description">Enter food choices</div>
+          </div>
+        </div>
+        <div class="active step">
+          <i class="star icon"></i>
+          <div class="content">
+            <div class="title">Step 3:</div>
+            <div class="description">Find nearby stores</div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="ui teal header">        
+        <div class="content">
+            Where would you like to shop?
+        </div>
+      </h2>  
+
+      <div class="ui segment">
+        <h5 class="ui left aligned header">Select the store nearest you:</h5>
+        <div id="map"></div>        
+        <div class="ui fluid large teal submit button" id="done">Done</div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

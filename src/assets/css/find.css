@@ -1,0 +1,17 @@
+body {
+	background-color: rgb(235, 235, 235);
+}
+body > .grid {
+	height: 100%;
+}
+.column {
+	max-width: 650px;
+}
+.ui.button {
+	margin-top: 1em;
+}
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+  }
