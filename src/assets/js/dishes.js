@@ -27,7 +27,7 @@ $(function() {
 
 	// Show addDish modal menu when button is clicked
 	$('#addDish').click(function() {
-		$('.ui.modal').modal({inverted: true}).modal('show');
+		$('.ui.modal').modal({inverted: true,closable: false}).modal('show');
 	});
 
   	// Semantic UI Elements
@@ -39,21 +39,20 @@ $(function() {
 
 	// Add new recipe
 	$("#create").click(function(event) {
-		// event.preventDefault()
-		let recipeName = $('.ui.form').form('get value', 'recipeName');
-		let recipeCategory = $('.ui.form').form('get value', 'recipeCategory');
+		let name = $('.ui.form').form('get value', 'recipeName');
+		let category = $('.ui.form').form('get value', 'recipeCategory');
 		let ingredients = $('.ui.form').form('get value', 'ingredients');
-		let visibility = $('#dropdown').dropdown('set selected', value);
-		console.log(recipeName);
-		var dish = {name: recipeName, category: recipeCategory, ingredients: mainIngredients};
-		console.log(dish);
-		// db.collection("createRecipes").add(dish)
-		// .then(function(docRef) {
-		// 	console.log("Document written with ID: ", docRef.id);
-		// })
-		// .catch(function(error) {
-		// 	console.error("Error adding document: ", error);
-		// });
+		let shared = $('.ui.checkbox').checkbox('is checked')[0] === false;
+		var dish = {name: name, category: category, shared: shared};
+
+		db.collection("recipes").add(dish)
+		.then(function(docRef) {
+			console.log("Document written with ID: ", docRef.id);
+		})
+		.catch(function(error) {
+			console.error("Error adding document: ", error);
+			alert("Could not create recipe.");
+		});
 	});
 
 	// Clear form when cancelling

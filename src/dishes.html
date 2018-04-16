@@ -59,18 +59,38 @@
   </div>
 
   <div class="ui main container">
-      <h2 class="ui dividing header">My Dishes</h2>
-    <div class="ui grid">
-      <div class="row">
-        <div class="thirteen wide column">
-        </div>
-        <div class="three wide right aligned column">
-            <button class="ui blue button" id="addDish">Add a new recipe</button>
-        </div>
-      </div>
+    <div class="ui clearing basic segment">
+      <h2 class="ui dividing header">My Dishes
+          <button class="ui right floated blue button" id="addDish" style="position:relative;bottom:7px;">Add a new recipe</button>
+      </h2>    
     </div>
+    <table class="ui selectable celled striped table" id="myTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Ingredients</th>
+          <th>Category</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="table">
+      </tbody>
+      <tfoot>
+      </tfoot>
+    </table>
+  </div>
 
-    <div class="ui modal">
+  <div class="ui vertical footer segment">
+    <div class="ui center aligned container">
+        <p>
+            © 2018 All Rights Reserved.&nbsp;
+            <a class="item" href="privacy.html">Privacy Policy</a>
+        </p>
+    </div>
+  </div>
+
+  <div class="ui modal">
       <div class="header">
         New Recipe
       </div>
@@ -87,14 +107,14 @@
                   <select name="recipeCategory" class="ui fluid search dropdown">
                     <option value="">Category</option>
                     <option value="none">None</option>
-                    <option value="angular">Vegan</option>
-                    <option value="css">Vegetarian</option>
+                    <option value="vegan">Vegan</option>
+                    <option value="vegetarian">Vegetarian</option>
                   </select>
                 </div>
               </div>
               <div class="field">
                 <label>Ingredients</label>
-                <div class="ui fluid multiple search selection dropdown">
+                <div class="ui fluid multiple search selection dropdown" id="dropdown">
                   <input name="ingredients" type="hidden">
                   <div class="default text">Press Enter after each ingredient</div>
                 </div>
@@ -127,34 +147,6 @@
         </div>
       </div>
     </div>
-
-    <!-- ui unstackable selectable celled striped table -->
-    <table class="ui celled table" id="myTable">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Ingredients</th>
-          <th>Category</th>
-          <th>Edit</th>
-          <th>Delete</th>
-        </tr>
-      </thead>
-      <tbody id="table">
-      </tbody>
-      <tfoot>
-      </tfoot>
-    </table>
-
-  </div>
-
-  <div class="ui vertical footer segment">
-    <div class="ui center aligned container">
-        <p>
-            © 2018 All Rights Reserved.&nbsp;
-            <a class="item" href="privacy.html">Privacy Policy</a>
-        </p>
-    </div>
-  </div>
 
 </body>
 </html>
