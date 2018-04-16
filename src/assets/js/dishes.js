@@ -43,11 +43,18 @@ $(function() {
 		let category = $('.ui.form').form('get value', 'recipeCategory');
 		let ingredients = $('.ui.form').form('get value', 'ingredients');
 		let shared = $('.ui.checkbox').checkbox('is checked')[0] === false;
-		var dish = {name: name, category: category, shared: shared};
+		var dish = {name: name, ingredients: ingredients, category: category, shared: shared};
 
 		db.collection("recipes").add(dish)
 		.then(function(docRef) {
 			console.log("Document written with ID: ", docRef.id);
+			table.row.add( [
+				dish.name,
+				dish.ingredients,
+				dish.category,
+				'<a href="#"><i class="edit icon"></i></a>',
+				'<a href="#"><i class="trash icon"></i></a>' 
+			] ).draw();
 		})
 		.catch(function(error) {
 			console.error("Error adding document: ", error);
@@ -61,3 +68,16 @@ $(function() {
 	});
   
 });
+
+// moveStuff("sgRecipes","recipes", db);
+// moveStuff("userRecipes","recipes", db);
+
+// function moveStuff(a,b,db) {
+// 	db.collection(a).get().then(function(querySnapshot) {
+// 		querySnapshot.forEach(function(doc) {
+// 			// doc.data() is never undefined for query doc snapshots
+// 			db.collection(b).add(doc.data());
+// 			console.log("Document written from", a);
+// 		});
+// 	});
+// }
