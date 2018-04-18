@@ -1,0 +1,34 @@
+[debug] [2018-04-18T06:24:34.065Z] ----------------------------------------------------------------------
+[debug] [2018-04-18T06:24:34.067Z] Command:       /Users/benkwok/.nvm/versions/node/v8.9.4/bin/node /Users/benkwok/.nvm/versions/node/v8.9.4/bin/firebase serve --only functions
+[debug] [2018-04-18T06:24:34.067Z] CLI Version:   3.18.4
+[debug] [2018-04-18T06:24:34.067Z] Platform:      darwin
+[debug] [2018-04-18T06:24:34.067Z] Node Version:  v8.9.4
+[debug] [2018-04-18T06:24:34.067Z] Time:          Tue Apr 17 2018 23:24:34 GMT-0700 (PDT)
+[debug] [2018-04-18T06:24:34.067Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-04-18T06:24:34.076Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-04-18T06:24:34.076Z] > authorizing via signed-in user
+[debug] [2018-04-18T06:24:34.077Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/seriousgroceries  
+  
+ Tue Apr 17 2018 23:24:34 GMT-0700 (PDT)
+[debug] [2018-04-18T06:24:34.520Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-18T06:24:34.521Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/seriousgroceries/tokens  
+  
+ Tue Apr 17 2018 23:24:34 GMT-0700 (PDT)
+[debug] [2018-04-18T06:24:34.951Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-18T06:24:34.952Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/seriousgroceries  
+  
+ Tue Apr 17 2018 23:24:34 GMT-0700 (PDT)
+[debug] [2018-04-18T06:24:35.249Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/benkwok/Repositories/SeriousGroceries/seriousgroceries'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-04-18T06:24:35.715Z] Fetching environment
+[debug] [2018-04-18T06:24:35.716Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/743447851329:getServerAppConfig  
+  
+ Tue Apr 17 2018 23:24:35 GMT-0700 (PDT)
+[debug] [2018-04-18T06:24:36.184Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-18T06:24:36.184Z] Starting @google-cloud/functions-emulator
+[debug] [2018-04-18T06:24:37.759Z] Parsing function triggers
+[info] ✔  functions: scrape: http://localhost:5000/seriousgroceries/us-central1/scrape

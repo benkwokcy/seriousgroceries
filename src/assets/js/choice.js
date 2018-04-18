@@ -10,18 +10,18 @@ $(function() {
 		// if( $('.ui.form').form('is valid')) {
 			
 			// Add a new document with a generated id.
-			db.collection("sgRecipes").add({
-				name: "Tokyo",
-				country: "Japan"
-			})
-			.then(function(docRef) {
-				console.log("Document written with ID: ", docRef.id);
-			})
-			.catch(function(error) {
-				console.error("Error adding document: ", error);
-			});
+			// db.collection("recipes").add({
+			// 	name: "Tokyo",
+			// 	country: "Japan"
+			// })
+			// .then(function(docRef) {
+			// 	console.log("Document written with ID: ", docRef.id);
+			// })
+			// .catch(function(error) {
+			// 	console.error("Error adding document: ", error);
+			// });
 
-			var diet = $('#adropdown').dropdown('get value');
+			// var diet = $('#adropdown').dropdown('get value');
 			window.location = 'find.html';
 		// }
 	});
