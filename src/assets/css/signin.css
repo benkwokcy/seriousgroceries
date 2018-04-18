@@ -2,11 +2,11 @@ body {
   background-color: rgb(235, 235, 235);
 }
 body > .grid {
-  height: 90%;
+  height: 100%;
 }
-.image {
+/* .image {
   margin-top: -100px;
-}
+} */
 .column {
   max-width: 400px;
 }
